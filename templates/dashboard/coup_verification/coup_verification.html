@@ -1,0 +1,33 @@
+{% extends 'c_base.html' %}
+
+
+{% block title %}form{% endblock title %}
+
+{% block search_style %}display: none;{% endblock search_style %}
+
+
+
+
+{% block body %}
+<div class="container">
+
+    <h1>Coupons form</h1>
+<form method='post' action='/dashboard/verification' >
+  {% csrf_token %}
+    <div class="form-group">
+      <label for="name">name</label>
+      <input type="text" class="form-control" id="name" name="name" aria-describedby="name" >
+      
+    </div>
+    <div class="form-group">
+      <label for="verificationcode">Verificationcode</label>
+      <input type="text" class="form-control" id="verificationcode" name="verificationcode" aria-describedby="verificationcode" >
+      
+    </div>
+    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>  
+{% endblock body %}

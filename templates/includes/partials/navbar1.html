@@ -1,0 +1,48 @@
+<div class="nav-hamburger">
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="welcome.php"><li>Home</li></a>
+      <a href="#"><li>Coupons</li></a>
+      <a href="#"><li>Categories</li></a>
+      <a href="#"><li>Contact</li></a>
+      
+    </ul>
+  </div>
+</nav>
+</div>
+
+     
+<!-- //////////////////////////////////////////////////////// -->
+
+  
+
+     <div class="navbartop">
+     <div class="navtop logo bg-edge-curved"><img src="refinne-logo-black.png" class="logo top-main" style=" position: relative;width: 120px;float: left;line-height: 100px;margin-top: 5px;margin-left: 10px;"  alt="...."></div>
+      <div class="navtop toplink homelink"><a href="welcome.php" style="color:#000000;">Home</a> </div>
+      <div class="navtop toplink couponlink"><a href="survey_id_1.php" style="color:#000000;">Coupons</a></div>
+      <div class="navtop toplink categorylink" style="color:#000000;">Categories <div class="dropdown-content"><div class="dropdown-list"><a href="dinning.php" style="color:#000000;">Dinning</a></div><div class="dropdown-list"><a href="cafe.php" style="color:#000000;">Cafe</a></div><div class="dropdown-list"><a href="groceries.php" style="color:#000000;">Groceries</a></div><div class="dropdown-list"><a href="pharmacy.php" style="color:#000000;">Pharmacy</a></div></div></div>
+      <div class="navtop toplink signup" ><div class="navtop toplink categorylink" style="color:#000000;">   <img src="user-add.png" alt="" class="add-user"><div class="signup-guest"><?php echo $_SESSION['username']?></div> <div class="dropdown-content" style="margin-left: -110px;"><div class="dropdown-list"><a href="logout.php" style="color:#000000;">Logout</a></div><div class="dropdown-list"></div></div></div> </div>
+     
+    </div>
+

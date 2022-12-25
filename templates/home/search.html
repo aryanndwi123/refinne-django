@@ -1,0 +1,44 @@
+{% extends 'c_base.html' %}
+{% block title %}Search Results{% endblock title %}
+
+
+
+
+{% block body %}
+
+<div class="container" style="height: 500px;">
+    <h2>search results</h2>
+    {% if allCoupons|length < 1 %}<p style="height: 500px;">Your search <b>{{query}}</b> did not match</p>{% endif %}
+    {% for cou in allCoupons %}
+   
+        <!-- A div with container id to hold the card -->
+  <div id="container">
+
+   <!-- A div with card class for the card  -->
+   <div class="card">
+     <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
+
+     <!-- A div with card__details class to hold the details in the card  -->
+     <div class="card__details">
+
+       <!-- Span with tag class for the tag -->
+       <span class="tag">{{cou.offer}} % off</span>
+
+       
+
+       <!-- A div with name class for the name of the card -->
+       <div class="name">{{cou.name}}</div>
+
+       <p>{{cou.content }}</p>
+
+       <button class="but1">Read More</button>
+     </div>
+
+
+   </div>
+ </div>
+
+   {% endfor %}
+
+ </div> 
+{% endblock body %}

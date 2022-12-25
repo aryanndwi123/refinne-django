@@ -1,0 +1,31 @@
+{% extends 'c_base.html' %}
+{% block title %}c_home{% endblock title %}
+{% load static %}
+{% block search_style %}display: none;{% endblock search_style %}
+{% block body %}
+
+
+
+   {% for cou in one_entry %}
+   
+      
+  
+       {{cou.offer}} % off
+
+       
+
+       
+      {{cou.name}}
+
+       <p>{{cou.content | truncatechars:100 }}</p>
+
+       
+       {{cou.slug}}
+       {{cou.code}}
+
+
+   </div>
+ </div>
+
+   {% endfor %}
+{% endblock body %}
