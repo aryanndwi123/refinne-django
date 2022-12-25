@@ -1,0 +1,1649 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a {
+    color: #0c0c0c;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+body{
+    text-align: center;
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+.discount-tag{
+    display: none;
+}
+
+.content33{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:980px
+}
+.list-coupon{
+    
+    
+    font-size: 30px;
+    font-family: 'poppins';
+    color: #000000;
+    margin-left: 105px;
+}
+
+
+
+
+.navbartop{
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+    box-shadow: 0px 0.5px 15px 0.1px rgb(0, 0, 0);
+    position: relative;
+    z-index: 10;
+}
+
+
+.nav-bottom{
+    width: 100%;
+    background-color: #dfdfdf;
+    position:fixed; 
+    bottom:0;
+    height:60px; 
+    display: flex;
+    justify-items: center;
+    border-radius: 20px 20px 0px 0px;
+    
+
+    
+
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    
+    padding-top: -10px;
+
+    
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    
+    float: left;
+    line-height: 100px;
+    margin-top: 5px;
+    margin-left: 30px;
+    
+}
+
+.navtop{
+    float: left;
+}
+
+
+.toplink{
+    margin-top: 0px;
+    margin-left: 2%;
+    margin-right: 31px;
+    font-size: 25px;
+    font-family: 'montserrat', Times, serif;
+    
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+
+.homelink{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+
+.introimg{
+
+    background-color: #d7f2eb;
+    
+    width: 100%;
+    
+    /* overflow: hidden; */
+    
+}
+.uppermiddleboxes{
+    display: none;
+    justify-content: space-between;
+}
+.middlebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 70px;
+    margin: 20px;
+    background-image: linear-gradient(to right, #00B4DB, #0083B0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 0px;
+    
+    border-radius: 20px;
+}
+.upper-centered-objects{
+    background-image: linear-gradient(140deg, #c8f5e9,#c8f5e9,#fefefe,#c8f5e9,#d7f2eb);
+    
+    
+    padding-top: 65px;
+    padding-bottom: 100px;
+    
+    
+    background-repeat:no-repeat;
+    background-position:bottom;
+    position: relative;
+    
+    
+    
+}
+.upper-centered-objects1{
+    background-color: #ffdc01;
+    
+    
+    padding-top: 65px;
+    padding-bottom: 50px;
+    
+   
+    display: none;
+    
+    
+    
+}
+
+
+.site-text{
+   
+    text-align: left;
+    font-family: 'Ms Madi';
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    padding-left: 80px;
+    margin-top: 40px;
+    font-weight: 500;
+    
+
+   
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    z-index: 2;
+}
+
+.site-subtext{
+   
+    text-align: left;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    padding-left: 80px;
+    height: 200px;
+    width: 700px;
+    
+
+   
+   
+   
+    position: absolute;
+    z-index: 2;
+    margin-top: 140px;
+}
+
+/* .bg_slider_upper{
+    position: absolute;
+    float: left;
+    display: flex;
+    animation: bannermove 20s linear infinite;
+}
+@keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  } */
+
+ 
+  .bg_slide1 {
+      border-radius: 20px;
+  }
+  
+  .bg_section {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bg_article {
+    display: flex;
+    width: 200%;
+    animation: bannermove 20s linear infinite;
+  }
+  
+ 
+  
+  .bg_ul {
+    display: flex;
+    /* background: red; */
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .bg_li {
+    width: 100%;
+    
+    margin: 4px;
+    filter: blur(1px) drop-shadow(1px 2px 3px black);
+
+  }
+  
+
+  
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-15%);
+    }
+  }  
+
+
+.bg_slider_img{
+    height: 60px;
+    width: 132px;
+    transform: translateX(1%);
+}
+
+.search-bar{
+    
+    width: 85%;
+    height: 45px;
+    border-radius: 10px;
+    border: solid #00203F 0px;    
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    margin-left: -20px;
+    background-color: #22f4cf;
+    
+}
+.search-bar:focus-visible{
+    outline: 0px;
+
+}
+.search-bar:focus{
+    background-color: #d8ebe7;
+
+}
+
+.search-icon{
+    float: right;
+    width: 10%;
+    height: 45px;
+    
+    
+    border-radius: 10px;
+    color: white;
+    background-color: #a3f6e6;
+    font-size: 17px;
+
+    
+    
+    border-left: none;
+
+    border-style:  none;
+    cursor: pointer;
+    padding: 7px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon:hover{
+    background-color: #64ecd1;
+}
+
+
+.search-box{
+   
+    
+    
+    border-radius: 35px;
+    
+
+    
+    margin-left: 80px;
+    position: relative;
+    margin-top: 240px;
+    z-index: 2;
+
+}
+.primeimg{
+    float: right;
+}
+
+
+
+.add-user{
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 4px;
+    
+}
+
+
+
+.signup{
+    float: right;
+    margin-right: 80px;
+    width: 140px;
+    margin-top: 20px;
+    background-color: #22f4cf;
+    
+    
+}
+.signup-mob{
+    display: none;
+}
+.categorylink1{
+    display: none;
+}
+.signup-guest{
+    
+    font-size: 15px;
+    font-family: 'montserrat';
+    text-align: center;
+    
+}
+
+.center-body {
+    width: 90%;
+    border-radius: 30px;
+    background-color: #ffffff;
+    margin: 5%;
+    
+}
+
+.upper-center-body{
+    width: 90%;
+    border-radius: 30px;
+    background-color: #ffffff;
+    margin: 5%;
+    
+
+}
+.footer{
+    position: relative;
+
+    width:100%;
+    bottom:0px;
+    height: 150px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    text-align: center;
+    
+    
+
+}
+.couponlink{
+    margin-top: 20px;
+}
+
+
+.container-product-coupon{
+    
+    padding: 30px;
+    padding-top: 0px;
+    max-height: 500px;
+    border-radius: 30px;
+
+    margin-top: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    
+    overflow-x: auto;
+    
+}
+.container-product-coupon::-webkit-scrollbar{
+    height: 10px;
+}
+
+.product-category{
+    width: 100%;
+    padding: 30px;
+    padding-top: 0px;
+    height: 400px;
+    border-radius: 30px;
+   
+    margin-top: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.discount-offer{
+    position: relative;
+    float: right; 
+    margin-top: 100px; 
+    margin-right: -90px;
+    color: green;
+    font-size: 25px;
+    font-family: 'bebas neue';
+}
+
+.discount-tag{
+    position: absolute;
+    margin: -20px;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-25deg);
+}
+.coupon-name{
+    margin-top: 0px;        
+    
+    padding: 7px;
+    
+    font-size: 2.5vh;
+    position: relative;
+    color: #000000;
+    font-family: 'Poppins';
+    text-align: left;
+    
+    
+}
+
+.coupon-location-api{
+    text-align: left;
+}
+
+.coupon-code-inner{
+    font-family: 'bebas neue';
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+
+
+.container-display-coupon-box{
+    height: 90%;
+    min-width: 250px;
+    
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+    
+    
+    
+}
+
+.display-category-box{
+    height: 80%;
+    width: 250px;
+    border-radius: 20px;
+    margin: 20px;
+    
+    background-color: #fefce7;
+    box-shadow: 0 12px 16px 0 rgba(82, 82, 82, 0.24), 0 17px 50px 0 rgba(105, 105, 105, 0.19);
+    display: flex;
+    justify-content: left;
+}
+
+
+.container-intro-text{
+    color: #000000;
+    margin-top: 120px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Reem Kufi Fun' ;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-image{
+    height:300px;
+    width:300px;
+    margin-left:35%;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.find-state {
+    margin-left: 10px;
+    
+    position: relative;
+    float: left;
+   
+    color: rgb(0, 0, 0);
+    border: none;
+    height: 40px;
+    width: 60%;
+    margin-right: 40%;
+    border-radius: 20px;
+    font-family: 'montserrat';
+    font-size: 15px;
+    font-weight: 700px;
+    text-align: left;
+
+}
+.menu-show{
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+    background-color: #000000;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    font-family: 'bebas neue';
+    font-size: 20px;
+
+}
+.find-state:hover{
+    
+    color: rgb(0, 183, 255);
+    
+}
+.menu-show:hover{
+    background-color: #ffffff;
+    color: #000;
+    border: solid black 2px;
+
+}
+.container-desc-text{
+    color: #000000;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contaier-intro-text{
+    position: absolute;
+    display: inline;
+}
+
+
+
+.button-check-survey{
+    height: 40px;
+    width: 100%;
+    
+    
+    border-radius: 10px;
+    background-color: #23f4ce;
+    border: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+    
+    
+    
+    color: #f8eaff;
+    font-family: 'montserrat';
+    font-weight: 400;
+}
+
+.button-check-survey:hover{
+    border: solid #23f4ce 1px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.coupon-display-image{
+    height: 50%;
+    width: 100%;
+    
+    justify-content: center;
+    
+
+}
+
+.category-display-image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.coupon-image{
+   
+    
+    
+    
+    border-radius: 15px 15px 0px 0px;
+    /* border: solid rgb(31, 3, 22) 1px; */
+}
+
+.category-image{
+    
+
+    height: 100%;
+    width: 100%;
+    
+    margin: 2.5%;
+    border-radius: 7px ;
+    margin: 0px;
+    
+
+}
+.category-image:hover{
+    filter: blur(1.2px);
+    transition: 900ms;
+
+}
+
+.category-name{
+    text-shadow: 8px rgba(0,0,0,0.2);
+    margin-left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px;
+    margin-top: 40px;
+    color: white;
+    position: absolute;
+    font-family: 'Poppins', Courier, monospace;
+    background: rgba(34,244,207, 0.7);
+    border-radius: 0px 5px 5px 0px;
+    text-align: left;
+    width: 25vh;
+}
+
+
+.coupon-details{
+    
+    
+    margin-bottom: 7%;
+    padding: 10px;
+    padding-top: 0px;
+    margin-top: -10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+
+    width: 100%;
+  height: 22%;
+  overflow-y: auto;
+  font-size: 15px;
+
+    color: #000000;
+    background-color: #eef4f3;
+    box-shadow: 0px 10px 10px -15px #111;
+    position: relative;
+    
+}
+
+.coupon-box-description{
+    padding: 10px;
+    text-align: left;
+    font-size: 2.1vh;
+
+}
+
+.categorylink{
+
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+.signupcat{
+    
+    position: relative;
+    display: inline-block;
+    
+
+
+}
+.location-coupon{
+    margin-top: 100px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: #002031;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 3;
+
+  }
+
+.categorylink:hover .dropdown-content {
+    display: block;
+    
+  }  
+.signupcat:hover .dropdown-content {
+    display: block;
+    
+  }    
+
+
+.dropdown-list:hover{
+    background-color: rgb(174, 175, 160);
+    
+
+}
+
+.content-direction{
+    width: 10px;
+    height: 10px;
+    position: relative;
+
+}
+
+.get-direction{
+    width: 300px;
+    height: 40px;
+    float: right;
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" ]{
+    display: none;
+}
+
+.background-coupon{
+    width: 100%;
+    height: 100%;
+    
+}
+.coupon-container{
+   height: 900px;
+}
+
+.coupon-page-content{
+    margin: 5%;
+    margin-right: 2%;
+    height: 500px;
+    width: 60%;
+    float: left;
+    background-color: #fff5d5;
+    margin-left: -50px;
+}
+.coupon-page-content>h1{
+    color: #000000;
+    
+    margin-top: 20px;
+    font-size: 90px;
+    font-family: 'bebas neue';
+    margin-left: 70px;
+}
+.image-in-coupon{
+    height: 30%;
+    width: 29%;
+    overflow: hidden;
+    
+    background-color: #002031;
+    float: right;
+    margin: 2%;
+    margin-top: 8%;
+    margin-right: 88px;
+
+    margin-left: 0px;
+    border: solid rgb(0, 0, 0) 3px;
+}
+.cropped-section{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.coupon-review{
+    height: 20%;
+    width: 29%;
+    
+    background-color: #992031;
+    float: right;
+    margin: 2%;
+    margin-top: 1%;
+    margin-right: 88px;
+    margin-left: 0px;
+}
+
+
+
+.coupon-main-photo{
+    height: 170px;
+    width: 28%;
+    border-radius: 0px;
+    border: solid white 5px;
+    position:relative;
+    bottom: -20px;
+    left: 20px;
+    
+}
+.discount-coupon-page{
+    float: left;
+    margin-top: 60px;
+    margin-left: 30px;
+    color: white;
+    font-size: 120px;
+    font-family: 'bebas neue';
+    line-height: 80px;
+    
+}
+.heading-coupon-page{
+    float: right;
+    margin-top: 10px;
+    margin-right: 90px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: 'bebas neue';
+    line-height: 80px;
+
+}
+.discount-off{
+    float: left;
+    margin-top: 60px;
+    margin-left: 10px;
+    color: white;
+    font-size: 40px;
+    font-family: 'bebas neue';
+    line-height: 40px;
+
+}
+.coupon-code-container{
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    position:relative;
+    left: 75px;
+    margin-top: 30px;
+    border-radius: 20px;
+    color: #000000;
+    text-align: center;
+    font-family: 'bebas neue';
+    font-size: 30px;
+}
+.use-code-button{
+    float: right;
+    font-family: 'bebas neue';
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 15px;
+    margin-top: 7px;
+    text-align: center;
+    
+}
+
+
+.whole-content{
+    background-color: #ffffff;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.mySlides {display:none;}
+
+/* //////////////////////////////////////////////////////////////// */
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c4e3ff; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000; 
+  }
+
+@media only screen and (max-width: 1000px){
+    .whole-content{
+        width: 1000px;
+    }
+    .coupon-container-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    
+
+}
+
+.w3-content{
+    display: none;
+    
+}
+
+.nav-hamburger{
+    display: none;
+}
+.coupon-id-1{
+
+    height: 200px;
+    width: 600px;
+    float: left;
+    background-image: url('COUPONS_REFINNE1.png');
+  
+    background-repeat: no-repeat;
+}
+.coupon-id-container{
+    
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 200px;
+    width: 100%;
+    
+}
+
+.bottom-items{
+    height: 80px;
+    background-color: black;
+}
+
+.nav-bottom{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .uppermiddleboxes{
+        display: flex;
+        justify-content: space-between;
+    }
+    .signup-mob{
+        display: block;
+        float: right;
+        margin-right: -70px;
+        margin-top: -10px;
+        
+        
+        
+    }
+    .categorylink1{
+        display: block;
+    }
+    
+    .offer-bar{
+        margin: 10px;
+        
+    }
+    
+    .nav-bottom{
+        display: flex;
+        justify-content: space-between;
+        z-index: 9;
+    }
+    
+   
+    .category-image{
+        filter: blur(2px);
+    }
+    .category-image:hover{
+        filter: blur(1px);
+    }
+    .coupon-id-1{
+
+        height: 200px;
+        width: 600px;
+        float: left;
+        background-image: url('COUPONS_REFINNE1.png');
+        background-size: 300px;
+        background-repeat: no-repeat;
+    }
+    .coupon-id-container{
+    
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        height: 100px;
+        width: 304px;
+        margin: 4%;
+    }
+    .heading-coupon-page {
+        float: left;
+        margin-top: -10px;
+        margin-right: 32px;
+        color: rgb(0, 0, 0);
+        font-size: 31px;
+        font-family: 'bebas neue';
+        line-height: 80px;
+        margin-left: 24px;
+        height: 40px;
+      }
+      .coupon-code-container {
+        width: 152px;
+        height: 27px;
+        background-color: white;
+        position: relative;
+        left: 28px;
+        margin-top: 25px;
+        border-radius: 20px;
+        color: #000000;
+        text-align: center;
+        font-family: 'bebas neue';
+        font-size: 17px;
+      }
+    .discount-off {
+        float: left;
+        margin-top: 28px;
+        margin-left: 1px;
+        color: white;
+        font-size: 26px;
+        font-family: 'bebas neue';
+        line-height: 25px;
+      }
+    .discount-coupon-page{
+        float: left;
+        margin-top: 15px;
+        margin-left: 7px;
+        color: white;
+        font-size: 70px;
+        font-family: 'bebas neue';
+        line-height: 80px;
+        
+    }
+    .coupon-container{
+        height: 1000px;
+    }
+    .modal-image{
+        height:300px;
+        width:300px;
+        margin-left:0%;
+        margin-top: 1%;
+      }
+    .coupon-page-content{
+        margin: 5%;
+        margin-right: 2%;
+        height: 350px;
+        width: 100%;
+        float: left;
+        background-color: #fff5d5;
+        margin-left: 0px;
+    }
+    .image-in-coupon{
+        height: 18%;
+        width: 80%;
+        overflow: hidden;
+        
+        background-color: #002031;
+        float: left;
+        margin: 2%;
+        
+    
+        margin-left: 6%;
+        border: solid rgb(0, 0, 0) 3px;
+    }
+    .coupon-review{
+        height: 20%;
+        width: 90%;
+        
+        background-color: #992031;
+        float: left;
+        margin: 2%;
+        
+    }
+    .list-coupon{
+    
+    
+        font-size: 15px;
+        font-family: 'poppins';
+        color: #000000;
+        margin-left: 50px;
+    }
+    .location-coupon{
+        margin-top: 50px;
+    }
+    .coupon-page-content>h1{
+        color: #000000;
+        
+        margin-top: 20px;
+        font-size: 60px;
+        font-family: 'bebas neue';
+        margin-left: 35px;
+    }
+    .upper-centered-objects{
+        background-image: url('#000000');
+        padding-bottom: 10px;
+        padding-top: 5px;
+        display: none;
+    }
+    .upper-centered-objects1{
+        background-image: url('#000000');
+        padding-bottom: 10px;
+        padding-top: 5px;
+        display: block;
+    }
+    .bg_slider_upper{
+        display: none;
+    }
+    .introimg{
+        height: 60px;
+    }
+    .search-bar{
+        height: 30px;
+    }
+    .search-box{
+        width: 70%;
+        margin-top: 2px;
+    }
+    .search-icon{
+        height: 30px;
+    }
+    
+    
+    .site-text{
+        display: none;
+    }
+    
+    .whole-content{
+        width: 100%;
+    }
+    .upper-center-body{
+        height: 1500px;
+    }
+    .product-category{
+        width: 100%;
+        height: 40%;
+        padding: 30px;
+        padding-top: 0px;
+        height: 400px;
+        border-radius: 30px;
+        /* background-color: #e6d1ff; */
+        margin-top: 500px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .display-category-box{
+        margin-left: 10%;
+    }
+    .center-body{
+        width: 90%;
+        height: 650px;
+        border-radius: 30px;
+        background-color: #fefce7;
+        margin: 5%;
+    }
+    .navbartop{
+        display: none;
+    }
+
+    .container-product-coupon{
+        display: none;
+    }
+    .w3-content{
+        display: flex;
+        justify-content: center;
+    }
+    .w-3-button{
+        height: 50px;
+    }
+    .w3-button{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    .w3-button:hover{
+        background-color: #008CBA;
+        
+
+    }
+    .container-display-coupon-box{
+        height: 400px;
+    width: 270px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+    background-color: #f8eaff;
+    box-shadow: 0 12px 16px 0 rgba(82, 82, 82, 0.24), 0 17px 50px 0 rgba(105, 105, 105, 0.19);
+    }
+    
+    .nav-hamburger{
+        display: block;
+    }
+    .nav-hamburger>nav{
+        margin: 20px;
+        position: absolute;
+        z-index: 3;
+
+    }
+    .navigation
+
+    #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menuToggle a{
+    height: 20px;
+
+}
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #272727;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 250px;
+  margin: -50px 0 0 -50px;
+  padding: 75px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+    padding: 5px 0;
+    font-size: 15px;
+    font-family: 'poppins';
+}
+
+
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+    
+
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+.loader:before{
+    animation-delay: .5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: bignoodletitling;
+    color: #fff;
+    letter-spacing: 5px;
+}
+nav {
+    float: right;
+    line-height: 30px;
+}
+nav a {
+    text-decoration: none;
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 0px;
+    color: #fff;
+}
+.banner-area{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url(2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-area h2 {
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: #fff;
+}
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: #ebebeb;
+    height: 1500px;
+}
+.content-area h2 {
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.content-area p {
+    padding: 2% 0px;
+    font-family: merienda;
+    line-height: 30px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+img {
+    width: 100%;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
+  }
+#container {
+    max-width: 300px;
+  
+    /* Center the container in middle on horizontal axis */
+    margin: 0 auto;
+  
+    /* Add empty space above the container (20% of the view height) */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+.card {
+    /* Change background color */
+    background-color: white;
+  
+    /* Add border */
+    border: 1px solid #bacdd8;
+  
+    /* Add space between the border and the content */
+    padding: 8px;
+  
+    border-radius: 12px;
+  }
+/* Style div elements that have class equal to tag */
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+  
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #788697;
+  }
+  
+  /* Style div elements that have class equal to name */
+  .name {
+    font-size: 24px;
+    font-weight: 600;
+  
+    margin-top: 16px;
+  }
+  
+  /* Style p element */
+  p {
+    font-size: 14px;
+    color: #7f8c9b;
+    line-height: 150%;
+  }
+  
+  /* Style button element */
+  button.but1 {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+  
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+  
+    /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+    margin: 0 auto;
+    display: block;
+  
+    /* Button is a clickable element, therefore it should have a pointer cursor */
+    cursor: pointer;
+  }
+  
+  .card__details {
+    /* Add space around the details */
+    padding: 16px 8px 8px 8px;
+  }
+
+  button.but1:focus,
+  button.but1:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
