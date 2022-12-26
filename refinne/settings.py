@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'home.apps.HomeConfig',
     'coupons.apps.CouponsConfig',
+    'corsheaders',
+
     
 ]
 
@@ -52,6 +54,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'refinne.urls'
@@ -132,6 +136,6 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-5cff.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://*.web-production-5cff.up.railway.app']
 
 
