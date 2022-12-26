@@ -5,7 +5,7 @@ import random
 # Create your views here.
 def home(request):
     allCoupons = Coupons.objects.all()
-    print(allCoupons)
+    
     context = {'allCoupons': allCoupons}
     
     return render(request,'home/home.html', context)

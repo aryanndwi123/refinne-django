@@ -12,7 +12,7 @@ def coup_verification(request):
     if request.method=='POST':
         verificationcode = request.POST['verificationcode']
         name = request.POST['name']
-        print(verificationcode,name)
+        
         
         
         code_entry = Coupons.objects.filter(name = name).values('code')    
