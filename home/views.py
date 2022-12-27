@@ -10,6 +10,10 @@ def home(request):
     
     return render(request,'home/home.html', context)
 
+def login(request):
+        
+    return render(request,'home/login.html')
+
 
 def search(request):
     query=request.GET['query']
