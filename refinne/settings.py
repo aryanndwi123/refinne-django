@@ -84,8 +84,14 @@ WSGI_APPLICATION = 'refinne.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'wkvt3k15LIi8kknB2bM3',
+        'HOST': 'containers-us-west-64.railway.app',
+        'PORT': '6347',
     }
 }
 
