@@ -13,7 +13,7 @@ a {
 
 body{
     text-align: center;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .wrapper{
     width: 1170px;
@@ -28,6 +28,137 @@ body{
     margin-right:auto;
     max-width:980px
 }
+
+
+.coupon-front-display{
+    
+
+    
+    height: 700px;
+    width: 100%;
+}
+.coupon-content{
+    position: absolute;
+    margin: 3em;
+    margin-left: 20%;
+    font-size: 15px;
+    margin-top: 5em;
+    color: black;
+    font-family: 'montserrat';
+}
+.coupon-location{
+    position: absolute;
+    margin: 3em;
+    margin-left: 20%;
+    font-size: 15px;
+    color: black;
+    font-family: 'roboto condensed';
+    
+}
+.coupon-location:hover{
+    color: rgb(36, 36, 36);
+
+
+}
+.coupon-front-poster{
+    height: 12.99em;
+    margin: 6em;
+    padding: 1em;
+    background-image: url(coupon-2.png);
+   
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+    
+
+}
+.coupon-code{
+    font-size: 50px;
+    color: black;
+    font-family: 'roboto condensed';
+}
+.coupon-front-element{
+    height: 10em;
+    width: 40%;
+    background-color: #f95b00;
+    margin: -1em;
+    border-radius: 0px 100px 100px 0px;
+    box-shadow: 1px 7px 20px black;
+    position: absolute;
+}
+.coupon-front-offer{
+    width: 5em;
+    margin: 0px;
+    float: right;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 7%;
+    font-size: 40px;
+    font-family: 'roboto condensed';
+}
+
+.coupon-front-name{
+    margin: 0px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 300;
+    font-family: 'Roboto Condensed';
+    position: absolute;
+    margin-left: 45%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 60px;
+    perspective: 1000px;
+    margin-left: 40%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.dotted {
+    border: none;
+    border-top: 4px dotted black;
+    transform: rotate(90deg);
+    
+    width: 9em;
+    position: relative;
+    margin-left: 70%;
+    margin-top: 3.8em;
+  }
+
 .list-coupon{
     
     
@@ -1488,13 +1619,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    text-align: center;
-}
+
 .wrapper{
     width: 1170px;
     margin: 0 auto;
