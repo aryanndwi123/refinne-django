@@ -28,14 +28,14 @@ def signup(request):
         
     
         
-        #Check for error inputs
-        if len(username) > 10:
-            messages.error(request, "Username Must be under 10 characters")
-            return redirect('home')
+        # #Check for error inputs
+        # if len(username) > 10:
+        #     messages.error(request, "Username Must be under 10 characters")
+        #     return redirect('home')
         
-        if pass1 != pass2 :
-            messages.error(request, "passwords do not match")
-            return redirect("home")
+        # if pass1 != pass2 :
+        #     messages.error(request, "passwords do not match")
+        #     return redirect("home")
         
         
         
@@ -45,18 +45,9 @@ def signup(request):
         myuser.save()
         messages.success(request, "SUCESSFULLY CREATED ACCOUNT")
         
-    return render(request,'s_base.html')
+    return render(request,'home/signup.html')
     
-    
-            
-    
-        
-        
-    
-            
-    
-    
-
+  
 
 def search(request):
     query=request.GET['query']
@@ -109,7 +100,7 @@ def handleLogin(request):
         else:
             messages.error(request,"Invalid credentials")
             return redirect('coupons')
-     return render(request,'l_base.html')   
+     return render(request,'home/login.html')   
  
  
 def handleLogout(request):
@@ -119,6 +110,38 @@ def handleLogout(request):
     return redirect('home')
     
     return HttpResponse('handleLogout')
+
+def handleSignup(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        fname = request.POST['fname']
+        lname = request.POST['lname']
+        email = request.POST['email']
+        age = request.POST['age']
+        pnumber = request.POST['pnumber']
+        pass1 = request.POST['pass1']
+        
+        pass2 = request.POST.get('pass2', False)
+        
+        if len(username) < 10:
+            messages.error(request,"Username is too short")
+            
+        
+        myuser = User.objects.create_user(username=username,email=email,password=pass1,age= age,first_name=fname,last_name=lname,phone_number=pnumber)
+        myuser.first_name =fname
+        myuser.last_name = lname
+        myuser.save()
+        print("User created")
+        return HttpResponse('done') 
+    
+    else:
+      return render(request,'home/signup.html')       
+    
+    
+
+
+        
+         
 
         
     

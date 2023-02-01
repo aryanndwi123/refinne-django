@@ -44,6 +44,22 @@
   </div>
 
 </div>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some </p><br>
+    <p>text </p><br>
+    <p>in the Modal..</p><br>
+    <p>Some text in the Modal..</p><br>
+    <p>Some text in the Modal..</p><br>
+    <p>Some text in the Modal..</p><br>
+    <p>Some text in the Modal..</p><br>
+  </div>
+
+</div>
   
   {% include 'includes/partials/navbar-bottom.html' %}
 
@@ -70,7 +86,7 @@
         <div class="primeimg" style="border-radius: 580px;box-shadow: 0px 10px 30px black; height:300px;margin-top:200px;margin-right: -60px;"><img src="{% static 'primephoto/2.png' %}" style="height:300px;width:300px;"alt=""></div>
         <div class="primeimg" style="margin-right: -100px;margin-right: -200px;"><img src="{% static 'primephoto/1.png' %}" style="height:200px;width:200px;"alt=""></div>
         <form method="get" action="/search">
-            <div class="search-box" style="width: 500px;">
+            <div class="search-box" style="">
                 <input type="search" placeholder="Search for places, location, services" class="search-bar" name="query" id="query">
                 <button type="submit" class="search-icon"><img src="{% static 'search-icon.png' %}" style="height: 20px;width: 20px;" alt=""></button>
                 
@@ -83,7 +99,7 @@
      </div>
      
     
-<div class="uppermiddleboxes">
+{% comment %} <div class="uppermiddleboxes">
 
   <div class="middlebox"><img src="{% static 'chicken-leg.png' %}" alt="" style="height:40px; width:40px; margin:5px;"></div>
   <div class="middlebox"><img src="{% static 'sweets.png' %}" alt="" style="height:40px; width:40px; margin:5px;"></div>
@@ -97,7 +113,7 @@
   <div class="middlebox" ></div>
   <div class="middlebox"></div>
   <div class="middlebox" ></div>
-</div>
+</div> {% endcomment %}
 
      <div class="upper-center-body ">
      <div class="container-intro-text">Categories</div>
@@ -222,21 +238,13 @@
 
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="{% static 'index.js' %}"></script>
     <script>
     
-    var modal = document.getElementById("myModal");
+    
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -270,6 +278,85 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+}
+var findMyState =() =>{
+    
+
+  var success=(position)=>{
+      console.log(position)
+      var latitude =position.coords.latitude;
+      var longitude = position.coords.longitude;
+      console.log(latitude +''+longitude)
+      document.getElementById('id1').value = latitude+' '+longitude;
+      location.replace('https://www.google.com/maps?saddr='+latitude+','+longitude+'&daddr=The+square+one+cafe')
+      
+      
+  }
+  
+
+  navigator.geolocation.getCurrentPosition(success);
+  
+  
+}
+
+
+
+document.querySelector('.find-state').addEventListener('click',findMyState);
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";  
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}    
+x[myIndex-1].style.display = "block";  
+setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+
+function infiniteSlider(){
+var count;
+var b = document.getElementsByClassName("bg_slider");
+for(count=0; count < 100;count++){
+  
+}
+}
+
+function dropdownBtn(){
+dropdowncontent.style.display = "block";
+
+}
+
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
 }
     </script>
 
