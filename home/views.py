@@ -125,9 +125,14 @@ def handleSignup(request):
         
         if len(username) < 10:
             messages.error(request,"Username is too short")
+        
+        if pass1 != pass2:
+            messages.error(request,"Password does not match")   
+        if len(pass1) < 5:
+            messages.error(request,"Password is too short")
             
         
-        myuser = User.objects.create_user(username=username,email=email,password=pass1,age= age,first_name=fname,last_name=lname,phone_number=pnumber)
+        myuser = User.objects.create_user(username=username,email=email,password=pass1,first_name=fname,last_name=lname)
         myuser.first_name =fname
         myuser.last_name = lname
         myuser.save()
