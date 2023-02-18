@@ -782,12 +782,8 @@ body{
     left:0; top:0;
     width:100%; height:100%;
     display:inline-block;
-    background: -moz-linear-gradient(top, rgba(0,47,75,0.5) 0%, rgba(220, 66, 37, 0.5) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220, 66, 37, 0.5)), color-stop(100%,rgba(0,47,75,0.5))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(0,47,75,0.5) 0%,rgba(220, 66, 37, 0.5) 100%); /* W3C */
+    
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0)); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
   }
   .img-gradient img{
@@ -1187,6 +1183,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 
 
 @media only screen and (max-width: 600px){
+    
     .uppermiddleboxes{
         display: flex;
         justify-content: space-between;
@@ -1412,7 +1409,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         width: 100%;
     }
     .upper-center-body{
-        height: 650px;
+        height: 350px;
         margin-top: -80px;
     }
     .product-category{
@@ -1436,18 +1433,18 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         padding-left: 15px;
         padding-right: 15px;
         font-size: 15px;
-        margin-top: 40px;
+        margin-top: 15px;
         color: white;
         position: absolute;
         font-family: 'Poppins', Courier, monospace;
         background: rgba(34,244,207, 0.7);
         border-radius: 0px 5px 5px 0px;
         text-align: left;
-        width: 20%;
+        width: 30%;
     }
     .display-category-box{
         height: 100%;
-        width: 90%;
+        width: 40%;
         border-radius: 20px;
         margin: 5%;
         /* padding: 10px; */
@@ -1496,6 +1493,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 
     }
     .button-check-survey{
+        width: 95%;
         z-index: 2;
         margin-top: 47px;
         position: relative;
