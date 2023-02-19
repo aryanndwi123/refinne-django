@@ -4,6 +4,8 @@ import random
 from django.contrib import messages
 
 def dashboard(request):
+    
+    
    
     
     return render(request,'dashboard/dashboard.html')

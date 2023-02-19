@@ -16,8 +16,8 @@ class Coupons(models.Model):
     
     content = models.TextField()
     slug = models.CharField(max_length=130,unique=True)
-    timeStamp = models.DateTimeField(auto_now_add=True)
-    active = models.BooleanField(default=True)
+    
+    
     
     def __str__(self):
         return self.name +' by '

@@ -14,39 +14,7 @@ def home(request):
     
     return render(request,'home/home.html', context)
 
-def signup(request):
-    if request.method == 'POST':
-        #change parameters
-        username = request.POST['username']
-        pass1 = request.POST['pass1']
-        pass2 = request.POST['pass2']
-        fname = request.POST['fname']
-        lname = request.POST['lname']
-        age = request.POST['age']
-        pnumber = request.POST['pnumber']
-        email = request.POST['email']
-        
-    
-        
-        # #Check for error inputs
-        # if len(username) > 10:
-        #     messages.error(request, "Username Must be under 10 characters")
-        #     return redirect('home')
-        
-        # if pass1 != pass2 :
-        #     messages.error(request, "passwords do not match")
-        #     return redirect("home")
-        
-        
-        
-        myuser = User.objects.create_user(username,email,pass1)
-        myuser.first_name = fname
-        myuser.last_name = lname
-        myuser.save()
-        messages.success(request, "SUCESSFULLY CREATED ACCOUNT")
-        
-    return render(request,'home/signup.html')
-    
+
   
 
 def search(request):
@@ -99,7 +67,7 @@ def handleLogin(request):
             return redirect('home')
         else:
             messages.error(request,"Invalid credentials")
-            return redirect('coupons')
+            return redirect('home')
      return render(request,'home/login.html')   
  
  
@@ -109,7 +77,7 @@ def handleLogout(request):
     messages.success(request, "succesfully logout")
     return redirect('home')
     
-    return HttpResponse('handleLogout')
+    
 
 def handleSignup(request):
     if request.method == 'POST':
@@ -125,11 +93,15 @@ def handleSignup(request):
         
         if len(username) < 10:
             messages.error(request,"Username is too short")
+            return redirect('home/signup.html')
         
         if pass1 != pass2:
-            messages.error(request,"Password does not match")   
+            messages.error(request,"Password does not match") 
+            return redirect('home/signup.html')
+          
         if len(pass1) < 5:
             messages.error(request,"Password is too short")
+            return redirect('home/signup.html')
             
         
         myuser = User.objects.create_user(username=username,email=email,password=pass1,first_name=fname,last_name=lname)
