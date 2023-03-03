@@ -91,17 +91,17 @@ def handleSignup(request):
         
         pass2 = request.POST.get('pass2', False)
         
-        if len(username) < 10:
+        if len(username) < 5:
             messages.error(request,"Username is too short")
-            return redirect('home/signup.html')
+            return redirect('/signup1.html')
         
         if pass1 != pass2:
             messages.error(request,"Password does not match") 
-            return redirect('home/signup.html')
+            return redirect('/signup11.html')
           
         if len(pass1) < 5:
             messages.error(request,"Password is too short")
-            return redirect('home/signup.html')
+            return redirect('/signup111.html')
             
         
         myuser = User.objects.create_user(username=username,email=email,password=pass1,first_name=fname,last_name=lname)

@@ -91,7 +91,7 @@ body{
     margin: 0px;
     float: right;
     position: absolute;
-    margin-left: 70%;
+    margin-left: 7%;
     margin-top: 7%;
     font-size: 40px;
     font-family: 'roboto condensed';
@@ -104,7 +104,7 @@ body{
     font-weight: 300;
     font-family: 'Roboto Condensed';
     position: absolute;
-    margin-left: 45%;
+    margin-left: 4%;
 }
 
 .flip-card {
@@ -112,7 +112,7 @@ body{
     width: 250px;
     height: 60px;
     perspective: 1000px;
-    margin-left: 40%;
+    margin:auto;
   }
   
   .flip-card-inner {
@@ -559,6 +559,12 @@ body{
     display: flex;
     
     overflow-x: auto;
+    
+}
+.coupon-front-img::-webkit-scrollbar {
+    height: 1px;
+    width: 1px;
+    background: #000000;
     
 }
 .container-product-coupon::-webkit-scrollbar {
@@ -1183,6 +1189,36 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 
 
 @media only screen and (max-width: 600px){
+    .coupon-menu{
+        position: relative;
+        margin: 3em;
+        float: right;
+        font-size: 15px;
+        color: black;
+        font-family: 'roboto condensed';
+    }
+    .coupon-front-description{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    .coupon-front-img{
+        display: flex;
+        overflow-x: auto;
+        width: 90%;
+        margin: 5%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .coupon-front-poster{
+        margin: 1em;
+    }
+    .poster-top{
+        height: 267px;
+        background-color: white;
+        margin: 3%;
+        border-radius: 10px;
+    }
     
     .uppermiddleboxes{
         display: flex;

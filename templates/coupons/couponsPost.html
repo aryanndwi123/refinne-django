@@ -4,16 +4,23 @@
 {% block search_style %}display: none;{% endblock search_style %}
 {% block body %}
 
+{% for cou in one_entry %}
+
+    <div class="poster-top">
+      <div class="coupon-front-name">{{cou.name}}</div>
+      <div class="coupon-front-description">Burger·Pizza·Beverages</div>
+    </div>
 
 
-   {% for cou in one_entry %}
+
+   
 
 
    <div class="coupon-front-display">
     <div class="coupon-front-poster" >
       
       <div class="coupon-front-offer">{{cou.offer}} % OFF</div>
-      <div class="coupon-front-name">{{cou.name}}</div>
+      
       
       
 
@@ -45,7 +52,7 @@
     <div class="coupon-content">{{cou.content | truncatechars:100 }}</div>
     
     
-    <div class="coupon-menu"></div>
+    <div class="coupon-menu"><img src="{% static 'menu.png' %}" alt="" srcset="" style="height: 1em;width: 1em;border-radius: 0px;"> Menu</div>
     <div class="coupon-location"><img src="{% static 'placeholder-loc.png' %}" alt="" srcset="" style="height: 1em;width: 1em;"> Location</div>
     
 
