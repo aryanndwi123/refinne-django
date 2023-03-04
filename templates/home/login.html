@@ -20,13 +20,21 @@
 <body>
 
 <div class="login-content">    
+    {% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+  <strong>Message</strong> {{ message}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endfor %}
 <div class="login_box" style="width: 80%;margin-left: 10%;">
             <div class="left"><div class="top_link">
                 <a class="return-text" href="index.php"><img src="{% static 'return-button.png' %}" class="return-button" alt="">Return home </a>
             </div>
             <div class="contact">
                 <form action="/login" method="post">
-                    <h3>SIGNUP</h3>
+                    <h3>LOGIN</h3>
 
                     
                    

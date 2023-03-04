@@ -64,10 +64,10 @@ def handleLogin(request):
         if user is not None:
             login(request, user)
             messages.success(request, "succesfully Logged in")
-            return redirect('home')
+            return redirect('/')
         else:
             messages.error(request,"Invalid credentials")
-            return redirect('home')
+            return redirect('/login')
      return render(request,'home/login.html')   
  
  
@@ -75,41 +75,44 @@ def handleLogout(request):
     # if request.method == 'POST':
     logout(request)
     messages.success(request, "succesfully logout")
-    return redirect('home')
+    return redirect('/')
     
     
 
 def handleSignup(request):
     if request.method == 'POST':
         username = request.POST['username']
-        fname = request.POST['fname']
-        lname = request.POST['lname']
-        email = request.POST['email']
-        age = request.POST['age']
-        pnumber = request.POST['pnumber']
-        pass1 = request.POST['pass1']
         
-        pass2 = request.POST.get('pass2', False)
+        pass1 = request.POST['pass1']
+        pass2 = request.POST['pass2']
+        # pass2 = request.POST.get('pass2')
+        
+        
         
         if len(username) < 5:
             messages.error(request,"Username is too short")
-            return redirect('/signup1.html')
+            return redirect('/signup')
         
         if pass1 != pass2:
             messages.error(request,"Password does not match") 
-            return redirect('/signup11.html')
+            print(pass1 , pass2)
+            return HttpResponse('password not matching done')
           
         if len(pass1) < 5:
             messages.error(request,"Password is too short")
-            return redirect('/signup111.html')
+            return HttpResponse('length of password ')
             
         
-        myuser = User.objects.create_user(username=username,email=email,password=pass1,first_name=fname,last_name=lname)
-        myuser.first_name =fname
-        myuser.last_name = lname
+        myuser = User.objects.create_user(username=username,password=pass1)
+        
         myuser.save()
         print("User created")
-        return HttpResponse('done') 
+        user = authenticate(username=username , password = pass1)
+        
+        if user is not None:
+            login(request, user)
+            messages.success(request, "succesfully Logged in")
+            return redirect('/')
     
     else:
       return render(request,'home/signup.html')       
