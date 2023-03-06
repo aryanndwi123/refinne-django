@@ -535,17 +535,24 @@ body{
     width:100%;
     bottom:0px;
     height: 150px;
-    background-color: rgb(56, 56, 56);
-    color: white;
+    background-color: rgb(146, 230, 255);
+    color: rgb(3, 3, 3);
     text-align: center;
     
     
 
 }
+
+.privacypol{
+    display: block;
+}
 .couponlink{
     margin-top: 20px;
 }
 
+.heading-privacypol{
+    font-size: 50px;
+}
 
 .container-product-coupon{
     
@@ -570,6 +577,7 @@ body{
 .container-product-coupon::-webkit-scrollbar {
     
     width: 1px;
+    height: 2px;
     background: #000000;
     
 }

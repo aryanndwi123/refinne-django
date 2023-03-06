@@ -76,7 +76,9 @@ def handleLogout(request):
     logout(request)
     messages.success(request, "succesfully logout")
     return redirect('/')
-    
+
+def privacypolicy(request):
+    return render(request,'home/privacypolicy.html')    
     
 
 def handleSignup(request):
