@@ -9,6 +9,8 @@
     <div class="poster-top">
       <div class="coupon-front-name">{{cou.name}}</div>
       <div class="coupon-front-description">Burger·Pizza·Beverages</div>
+      <div class="coupon-location" style="position: relative;margin: 4em;width: 145px;margin-top: 5em;margin-bottom: 0px;margin-left: 5px;float: left;font-size: 25px;color: black;font-family: 'roboto condensed';padding: 5px;  background: white;border-radius: 8px;"><img src="{% static 'placeholder-loc.png' %}" alt="" srcset="" style="height: 1em;width: 1em;"> Location</div>
+      <div class="coupon-front-price">200 for two</div>
     </div>
 
 
@@ -19,7 +21,8 @@
    <div class="coupon-front-display">
     <div class="coupon-front-poster" >
       
-      <div class="coupon-front-offer">{{cou.offer}} % OFF</div>
+      <div class="coupon-front-offer">{{cou.offer}} % <br> OFF</div>
+      <div class="coupon-code">Coupon code :-{{cou.code}}</div>
       
       
       
@@ -35,7 +38,7 @@
       
     </div>
 
-    <div class="flip-card">
+    {% comment %} <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
           <img src="{% static 'discount-avatar.png' %}" alt="Avatar" style="width:75px;height:60px;">
@@ -44,12 +47,12 @@
           <div class="coupon-code">{{cou.code}}</div>
         </div>
       </div>
-    </div>
+    </div> {% endcomment %}
 
     
 
-    <div class="coupon-front-name" style="margin-left: 20%; font-size: 2em;">{{cou.name}}</div>
-    <div class="coupon-content">{{cou.content | truncatechars:100 }}</div>
+    <div class="coupon-front-name" style="margin-left: 20%; font-size: 2em;"></div>
+    {% comment %} <div class="coupon-content">{{cou.content | truncatechars:100 }}</div> {% endcomment %}
     
     
     <div class="coupon-menu"><img src="{% static 'menu.png' %}" alt="" srcset="" style="height: 1em;width: 1em;border-radius: 0px;"> Menu</div>
@@ -73,7 +76,7 @@
        <p></p>
 
        
-       {{cou.slug}}
+       {% comment %} {{cou.slug}} {% endcomment %}
        
        <div class="footer">Re:finne © 2021</div>
 

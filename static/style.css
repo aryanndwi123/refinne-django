@@ -34,7 +34,7 @@ body{
     
 
     
-    height: 700px;
+    height: 500px;
     width: 100%;
 }
 .coupon-content{
@@ -47,12 +47,17 @@ body{
     font-family: 'montserrat';
 }
 .coupon-location{
-    position: absolute;
+    position: relative;
     margin: 3em;
-    margin-left: 20%;
-    font-size: 15px;
-    color: black;
+    width: 112px;
+    margin-top: 0em;
+    float: left;
+    font-size: 19px;
+    color: white;
     font-family: 'roboto condensed';
+    padding: 5px;
+    background: black;
+    border-radius: 8px;
     
 }
 .coupon-location:hover{
@@ -64,7 +69,7 @@ body{
     height: 12.99em;
     margin: 6em;
     padding: 1em;
-    background-image: url(coupon-2.png);
+    background-image: url(coupon2.png);
    
     border-radius: 10px;
     background-size: cover;
@@ -91,9 +96,9 @@ body{
     margin: 0px;
     float: right;
     position: absolute;
-    margin-left: 7%;
+    margin-left: 60%;
     margin-top: 7%;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'roboto condensed';
 }
 
@@ -1200,10 +1205,16 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     .coupon-menu{
         position: relative;
         margin: 3em;
+        margin-top: 0em;
+        width: 100px;
+        margin-left: 0px;
         float: right;
-        font-size: 15px;
-        color: black;
+        font-size: 19px;
+        color: white;
         font-family: 'roboto condensed';
+        padding: 5px;
+        background: black;
+        border-radius: 8px;
     }
     .coupon-front-description{
         position: absolute;
@@ -1219,10 +1230,17 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         border-radius: 10px;
     }
     .coupon-front-poster{
+        
+        height: 8.3em;
         margin: 1em;
+        padding: 1em;
+        background-image: url(coupon2.png);
+        border-radius: 20px;
+        background-size: cover;
+        position: relative;
     }
     .poster-top{
-        height: 267px;
+        height: 170px;
         background-color: white;
         margin: 3%;
         border-radius: 10px;
@@ -1291,6 +1309,14 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         line-height: 80px;
         margin-left: 24px;
         height: 40px;
+      }
+      .coupon-code{
+        font-size: 20px;
+        color: black;
+        font-family: 'roboto condensed';
+        margin-top: 25%;
+        float: left;
+        margin-left: 30px;
       }
       .coupon-code-container {
         width: 152px;
@@ -1427,6 +1453,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         height: 30px;
         width: 90%;
         background-color: #d9ebe8;
+        font-size: 17px;
     }
     .search-box{
         width: 70%;
@@ -1513,7 +1540,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         padding-top: 0px;
         max-height: 500px;
         border-radius: 30px;
-        margin-top: 10px;
+        margin-top: 100px;
         margin-bottom: 70px;
         display: block;
         overflow-y: auto;
@@ -1539,10 +1566,10 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     .button-check-survey{
         width: 95%;
         z-index: 2;
-        margin-top: 47px;
+        margin-top: 35px;
         position: relative;
         /* z-index: 5; */
-        height: 17px;
+        height: 30px;
         box-shadow: none;
         color: black;
     }
@@ -1555,7 +1582,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         padding: 0px;
         padding-left: 10px;
         padding-top: 0px;
-        margin-top: 0px;
+        margin-top: 9px;
         border-radius: 10px;
         font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
         width: 100%;
@@ -1568,15 +1595,15 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         position: relative;
     }
     .coupon-box-description{
-        font-size: 100%;
+        font-size: 150%;
         padding-left: 20px;
     }
     .find-state{
-        font-size: 150%;
+        font-size: 200%;
         background-color: #f8eaff;
     }
     .coupon-name{
-        margin-top: -50px;
+        margin-top: -60px;
         font-size: 150%;
         
         color: #ffffff;
@@ -1591,6 +1618,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         /* margin-right: 10px; */
         margin: auto;
         margin-top: 20px;
+        margin-bottom: 20px;
         background-color: #f8eaff;
         box-shadow: 0 12px 16px 0 rgb(82 82 82 / 24%), 0 17px 50px 0 rgb(105 105 105 / 19%);
     }
@@ -1783,7 +1811,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 }
 .loader:before, .loader:after{
     content: '';
-    border: 1em solid #ff5733;
+    border: 1em solid #22f4cf;
     border-radius: 50%;
     width: inherit;
     height: inherit;

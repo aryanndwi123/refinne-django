@@ -160,9 +160,7 @@
 
 
 
-     <div class="center-body 1">
-     <div class="container-intro-text">Famous Cafes</div>
-     <div class="container-desc-text">Explore curated lists of top restaurants, cafes, pubs, and bars in Nagpur, based on trends</div>
+     {% comment %} <div class="center-body 1"> {% endcomment %}
      
      <!-- //////////////////////// -->
      <div class="w3-content w3-display-container">
@@ -211,17 +209,20 @@
 </div>
 <!-- ///////////////////////////////////// -->
      
-     <div class="container-product-coupon">
+     {% comment %} <div class="container-product-coupon"> {% endcomment %}
+      <div class="container-intro-text">Famous Cafes</div>
+     <div class="container-desc-text">Explore curated lists of top restaurants, cafes, pubs, and bars in Nagpur, based on trends</div>
+     
         
         {% block container-product-coupon %}{% endblock container-product-coupon %}
         
         
-       </div>
+       {% comment %} </div> {% endcomment %}
        
 
 
 
-     </div>
+     {% comment %} </div> {% endcomment %}
 
      <div class="footer">Re:finne © 2021 <a href="/privacypolicy" class="privacypol">Privacy Policy</a><a href="/aboutus" class="privacypol">About Us</a><a href="/contactus" class="privacypol">Grege Rodrigues +91 9999999999</a></div>
      
