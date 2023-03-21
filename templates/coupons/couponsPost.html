@@ -10,7 +10,7 @@
       <div class="coupon-front-name">{{cou.name}}</div>
       <div class="coupon-front-description">Burger·Pizza·Beverages</div>
       <div class="coupon-location" style="position: relative;margin: 4em;width: 145px;margin-top: 5em;margin-bottom: 0px;margin-left: 5px;float: left;font-size: 25px;color: black;font-family: 'roboto condensed';padding: 5px;  background: white;border-radius: 8px;"><img src="{% static 'placeholder-loc.png' %}" alt="" srcset="" style="height: 1em;width: 1em;"> Location</div>
-      <div class="coupon-front-price">200 for two</div>
+      <div class="coupon-front-price">₹200 <br> for two</div>
     </div>
 
 
@@ -20,7 +20,7 @@
 
    <div class="coupon-front-display">
     <div class="coupon-front-poster" >
-      
+      <div class="coupon-voucher">COUPON</div>
       <div class="coupon-front-offer">{{cou.offer}} % <br> OFF</div>
       <div class="coupon-code">Coupon code :-{{cou.code}}</div>
       
@@ -31,10 +31,10 @@
       
     </div>
     <div class="coupon-front-img">
-      <img src="{% static 'square one/1.jpg' %}" style="height:13em;width:13em;margin:0.5em;" alt="">
-      <img src="{% static 'square one/1.jpg' %}" style="height:13em;width:13em;margin:0.5em;" alt="">
-      <img src="{% static 'square one/1.jpg' %}" style="height:13em;width:13em;margin:0.5em;" alt="">
-      <img src="{% static 'square one/1.jpg' %}" style="height:13em;width:13em;margin:0.5em;" alt="">
+      <img src="{% static 'breadbash/1.jpg' %}" style="height:13em;width:13em;margin:0.5em;" alt="">
+      <img src="{% static 'breadbash/2.jpg' %}" style="height:13em;width:13em;margin:0.5em;" alt="">
+      <img src="{% static 'breadbash/3.jpg' %}" style="height:13em;width:13em;margin:0.5em;" alt="">
+      <img src="{% static 'breadbash/4.jpg' %}" style="height:13em;width:13em;margin:0.5em;" alt="">
       
     </div>
 
@@ -56,8 +56,7 @@
     
     
     <div class="coupon-menu"><img src="{% static 'menu.png' %}" alt="" srcset="" style="height: 1em;width: 1em;border-radius: 0px;"> Menu</div>
-    <div class="coupon-location"><img src="{% static 'placeholder-loc.png' %}" alt="" srcset="" style="height: 1em;width: 1em;"> Location</div>
-    
+    <button onclick="findMyState()" class="coupon-location" ><img src="{% static 'placeholder-loc.png' %}" alt="" srcset="" style="height: 1em;width: 1em;"> Location</button>
 
   </div>
   

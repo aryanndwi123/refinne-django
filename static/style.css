@@ -111,6 +111,18 @@ body{
     position: absolute;
     margin-left: 4%;
 }
+.coupon-front-price{
+    margin-top: 119px;
+    width: 112px;
+    float: right;
+    
+}
+.coupon-voucher{
+    font-family: 'Rubik';
+    position: absolute;
+    font-size: 3em;
+
+}
 
 .flip-card {
     background-color: transparent;
@@ -540,8 +552,8 @@ body{
     width:100%;
     bottom:0px;
     height: 150px;
-    background-color: rgb(146, 230, 255);
-    color: rgb(3, 3, 3);
+    background-color: rgb(36, 36, 36);
+    color: rgb(247, 247, 247);
     text-align: center;
     
     
@@ -550,6 +562,7 @@ body{
 
 .privacypol{
     display: block;
+    color: white;
 }
 .couponlink{
     margin-top: 20px;
@@ -1568,6 +1581,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         z-index: 2;
         margin-top: 35px;
         position: relative;
+        font-size: 17px;
         /* z-index: 5; */
         height: 30px;
         box-shadow: none;
