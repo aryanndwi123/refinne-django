@@ -89,9 +89,9 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '1D0bozHQ0WFhviswR0sq',
-        'HOST': 'containers-us-west-92.railway.app',
-        'PORT': '6169',
+        'PASSWORD': 'kJ6Wc11MmnWXBgIeXvj4',
+        'HOST': 'containers-us-west-164.railway.app',
+        'PORT': '5647',
     }
 }
 
