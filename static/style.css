@@ -105,12 +105,11 @@ body{
 .coupon-front-name{
     margin: 0px;
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
     font-weight: 300;
     font-family: 'Roboto Condensed';
     position: absolute;
     margin-left: 4%;
-    margin-top: 4%;
 }
 .coupon-front-price{
     margin-top: 119px;
