@@ -88,11 +88,12 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.postgresql',
         'ENGINE': 'djongo',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '1D0bozHQ0WFhviswR0sq',
-        'HOST': 'containers-us-west-92.railway.app',
-        'PORT': '6169',
+        'NAME': 'refinnedb',
+        # 'NAME': 'railway',
+        # 'USER': 'postgres',
+        # 'PASSWORD': '1D0bozHQ0WFhviswR0sq',
+        # 'HOST': 'containers-us-west-92.railway.app',
+        # 'PORT': '6169',
     }
 }
 
