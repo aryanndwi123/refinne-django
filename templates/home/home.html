@@ -3,17 +3,22 @@
 
 {% block container-product-coupon %}
 {% for cou in allCoupons %}
+<a href="coupons/{{cou.slug}}" class="mobile-display-coupon-box">
 <div class="container-display-coupon-box">
     <img src="discount-tag.png" alt="" class="discount-tag" >
     
     <div class="coupon-display-image">
-      <img src="{% static 'square one/1.jpg' %}" class="coupon-image" alt="">
-      <div class="coupon-details"><div class="coupon-name">{{cou.name}}</div>
-      <div class="coupon-location-api"><button class="find-state" onclick="myFunction()" style="margin-left: 0px; "><img src="{% static 'placeholder.png' %}" style="height:20px;width:20px; "alt="">Location</button><div class="coupon-review-api"></div></div>
-      <div class="coupon-box-description">A unique expirience for your pallette. The variable of the variety on your plate</div> </div>
+      
+      <div class="img-gradient"><img src="{% static 'breadbash/1.jpg' %}" class="coupon-image" alt=""></div>
+      <div class="coupon-name">{{cou.name}}</div>
+      <div class="coupon-details">
+      <div class="coupon-location-api"><input type="hidden" name="saddr" id="id1" value="Delhi"><button class="find-state" onclick="findMyState()" style="margin-left: 0px; "><img src="{% static 'placeholder.png' %}" style="height:20px;width:20px; "alt="">Bajaj Nagar</button><div class="coupon-review-api"></div></div>
+      <div class="coupon-box-description">Burger·Pizza·Beverages</div> </div>
     </div>
-    <a href="coupons/{{cou.slug}}"><button href="#" class="button-check-survey">GET COUPONS</button></a>
+    <a href="coupons/{{cou.slug}}"><button href="#" class="button-check-survey">20% OFF above ₹299</button></a>
   </div>
+</a>
+
   {% endfor %}
  
 {% endblock container-product-coupon %}

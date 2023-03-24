@@ -4,7 +4,7 @@ from coupons.models import Coupons
 # Create your views here.
 def couponsHome(request):
     allCoupons = Coupons.objects.all()
-    print(allCoupons)
+    
     context = {'allCoupons': allCoupons}
     
     return render(request,'coupons/couponsHome.html', context)

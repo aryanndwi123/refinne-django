@@ -6,6 +6,13 @@ urlpatterns = [
     path('', views.home),
     path('search', views.search, name='search'),
     path('dashboard', views.c_save, name='coupons_detail'),
+    path('signup', views.handleSignup, name='signup'),
+    path('login', views.handleLogin, name='login'),
+    path('logout', views.handleLogout, name='logout'),
+    path('privacypolicy', views.privacypolicy, name='privacypolicy'),
+    
+  
+    
     
     
     

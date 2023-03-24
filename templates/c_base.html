@@ -19,7 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@700&family=Reem+Kufi+Fun:wght@600&display=swap" rel="stylesheet"> 
-
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -47,7 +48,8 @@
   
   {% include 'includes/partials/navbar-bottom.html' %}
 
-  <div class="whole-content">
+  <div class="whole-content" style="background-color:#edede0;">
+    
 
   <!-- ///////////////////////////////////////////////////////////// -->
     {% include 'includes/partials/navbar.html' %}
@@ -60,7 +62,7 @@
 </div>
 {% endfor %}
 
-    <div class="introimg" >
+    <div class="introimg" style="height: 70px;overflow: hidden;" >
         {% comment %} {% block body %}{% endblock body %} {% endcomment %}
       
           
@@ -72,7 +74,7 @@
       
         
 
-      </div>
+      
    
      </div>
      <form method="get" action="/search" style="{% block search_style %}{% endblock search_style %}">
@@ -83,21 +85,24 @@
             </div>
     </form>
     
+    
      
      
+    
         {% block body %}{% endblock body %}
+        
        
      </div>
      
 
      </div>
 
-     <div class="footer">Re:finne © 2021</div>
      
 
 
     </div>
     {% include 'includes/partials/bottombar.html' %}
+   </div>
      
 
     
