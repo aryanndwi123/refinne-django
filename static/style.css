@@ -691,7 +691,7 @@ body{
     margin-top: 120px;
     text-align: center;
     font-size: 40px;
-    font-family: 'Reem Kufi Fun' ;
+    font-family: 'montserrat' ;
 }
 
 
@@ -864,6 +864,19 @@ body{
     display: flex;
     justify-content: center;
     
+    
+}
+
+
+.category-display-image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: red;
+    z-index: 200;
+    position: absolute;
+        
     
 }
 
@@ -1239,7 +1252,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         overflow-x: auto;
         width: 90%;
         margin: 5%;
-        background-color: white;
+        background-color: #f9f3ec;
         border-radius: 10px;
     }
     .coupon-front-poster{
@@ -1254,7 +1267,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     }
     .poster-top{
         height: 170px;
-        background-color: white;
+        background-color: #f9f3ec;
         margin: 3%;
         border-radius: 10px;
     }
@@ -1290,6 +1303,9 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
    
     .category-image{
         filter: blur(0px);
+        background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
     }
     .category-image:hover{
         filter: blur(1px);
