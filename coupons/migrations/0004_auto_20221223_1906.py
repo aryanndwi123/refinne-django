@@ -13,13 +13,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='coupons',
             name='validfrom',
-            field=models.DateField(default=0),
+            field=models.DateField(),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='coupons',
             name='validto',
-            field=models.DateField(default=0),
+            field=models.DateField(),
             preserve_default=False,
         ),
     ]

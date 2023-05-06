@@ -30,13 +30,7 @@ body{
 }
 
 
-.coupon-front-display{
-    
 
-    
-    height: 500px;
-    width: 100%;
-}
 .coupon-content{
     position: absolute;
     margin: 3em;
@@ -46,42 +40,8 @@ body{
     color: black;
     font-family: 'montserrat';
 }
-.coupon-location{
-    position: relative;
-    margin: 3em;
-    width: 112px;
-    margin-top: 0em;
-    float: left;
-    font-size: 19px;
-    color: white;
-    font-family: 'roboto condensed';
-    padding: 5px;
-    background: black;
-    border-radius: 8px;
-    
-}
-.coupon-location:hover{
-    color: rgb(36, 36, 36);
 
 
-}
-.coupon-front-poster{
-    height: 12.99em;
-    margin: 6em;
-    padding: 1em;
-    background-image: url(coupon2.png);
-   
-    border-radius: 10px;
-    background-size: cover;
-    position: relative;
-    
-
-}
-.coupon-code{
-    font-size: 50px;
-    color: black;
-    font-family: 'roboto condensed';
-}
 .coupon-front-element{
     height: 10em;
     width: 40%;
@@ -91,38 +51,10 @@ body{
     box-shadow: 1px 7px 20px black;
     position: absolute;
 }
-.coupon-front-offer{
-    width: 5em;
-    margin: 0px;
-    float: right;
-    position: absolute;
-    margin-left: 60%;
-    margin-top: 7%;
-    font-size: 30px;
-    font-family: 'roboto condensed';
-}
 
-.coupon-front-name{
-    margin: 0px;
-    text-align: center;
-    font-size: 4em;
-    font-weight: 300;
-    font-family: 'Roboto Condensed';
-    position: absolute;
-    margin-left: 4%;
-}
-.coupon-front-price{
-    margin-top: 119px;
-    width: 112px;
-    float: right;
-    
-}
-.coupon-voucher{
-    font-family: 'Rubik';
-    position: absolute;
-    font-size: 3em;
 
-}
+
+
 
 .flip-card {
     background-color: transparent;
@@ -576,7 +508,6 @@ body{
     
     padding: 30px;
     padding-top: 0px;
-    max-height: 500px;
     border-radius: 30px;
 
     margin-top: 10px;
@@ -645,16 +576,9 @@ body{
     
 }
 
-.coupon-location-api{
-    text-align: left;
-}
 
-.coupon-code-inner{
-    font-family: 'bebas neue';
-    font-size: 20px;
-    text-align: center;
 
-}
+
 
 
 
@@ -866,19 +790,17 @@ body{
     
     
 }
-
-
-.category-display-image-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    background-color: red;
-    z-index: 200;
-    position: absolute;
-        
+.category-display-image1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
     
 }
+
+
+
 
 .coupon-image{
    
@@ -1062,17 +984,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     width: 100%;
     overflow: hidden;
 }
-.coupon-review{
-    height: 20%;
-    width: 29%;
-    
-    background-color: #992031;
-    float: right;
-    margin: 2%;
-    margin-top: 1%;
-    margin-right: 88px;
-    margin-left: 0px;
-}
+
 
 
 
@@ -1106,6 +1018,9 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     line-height: 80px;
 
 }
+.checked {
+    color: orange;
+  }
 .discount-off{
     float: left;
     margin-top: 60px;
@@ -1225,36 +1140,207 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: none;
 }
 
+.poster-top{
+    height: 750px;
+    width: 90%;
+    margin: 5%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.coupon-front-name{
+    float: left;
+    font-family: 'Montserrat';
+    font-size: 10vh;
+    margin: 5%;
+    width: 90%;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.coupon-front-description{
+    float: left;
+    font-family: 'Montserrat';
+    font-size: 3vh;
+    margin: 5%;
+    margin-top: 1%;
+    width: 90%;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+.coupon-front-ldescription{
+    float: left;
+    font-family: 'Montserrat';
+    font-size: 3vh;
+    margin: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 90%;
+    text-align: left;
+    word-wrap: break-word;
+}
+.coupon-location{
+    position: relative;
+    /* margin: 4em; */
+    width: 145px;
+    /* margin-top: 5em; */
+    margin-bottom: 0px;
+    margin-left: 5px;
+    float: left;
+    font-size: 3vh;
+    color: black;
+    font-family: 'montserrat';
+    padding: 5px;
+    /* background: #f9f3ec; */
+    border-radius: 8px;
+    margin-left: 3.5%;
+}
+
+.coupon-poster{
+    height: 30%;
+    width: 100%;
+    background-color: aquamarine;
+    float: left;
+    font-family: 'Montserrat';
+    font-size: 3vh;
+    margin: 5%;
+    margin-top: 1%;
+    width: 90%;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.menu-loc-container{
+    height: 10%;
+    width: 100%;
+    float: left;
+    font-family: 'Montserrat';
+    font-size: 3vh;
+    margin: 5%;
+    margin-top: 0%;
+    width: 90%;
+    text-align: center;
+}
+
+.menu-btn{
+    position: relative;
+    margin: 4em;
+    height: 40px;
+    width: 145px;
+    /* margin-top: 5em; */
+    margin-bottom: 0px;
+    margin-left: 5px;
+    /* float: left; */
+    font-size: 3vh;
+    color: #22F4CF;
+    font-family: 'montserrat';
+    /* padding: 5px; */
+    background: #ffffff;
+    border: 2px solid #22F4CF;
+    /* border-radius: 8px; */
+    margin-left: 3.5%;
+    cursor: pointer;
+    
+    
+}
+
+.location-btn{
+    position: relative;
+    margin: 4em;
+    height: 40px;
+    width: 145px;
+    /* margin-top: 5em; */
+    margin-bottom: 0px;
+    margin-left: 5px;
+    /* float: left; */
+    font-size: 3vh;
+    color: white;
+    font-family: 'montserrat';
+    /* padding: 5px; */
+    background: #22F4CF;
+    /* border-radius: 8px; */
+    margin-left: 3.5%;
+    cursor: pointer;
+    border: none;
+}
+
+.coloumnp1{
+    float: left;
+    width: 65%;
+    padding: 10px;
+    height: 100%;
+    background-color: #F0226C;
+    color: white;
+}
+.coloumnp2{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 100%;
+    background-color: #22F4CF;
+}
+.coloumnp3{
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 100%;
+    background-color: #F0226C;
+}
+
+.coupon-voucher{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 70px;
+    font-family: 'roboto';
+
+}
+.coupon-code{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    color: white;
+    font-family: 'roboto condensed';
+
+}
+
+.line{
+    width: 60%;
+    margin: 0 20% 0 20%;
+    background-color: black;
+    height: 3px;
+    
+}
+
+.coupon-front-offer{
+    text-align: center;
+    font-size: 300%;
+
+}
+.photo-square-coupon{
+    height:13em;
+    width:13em;
+    margin:0.5em;
+
+}
+
+.photo-square-coupon:hover{
+    transition:.5s;
+    transform: scaleY(1.05);
+}
+
+.coupon-review{
+    width: 100px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
 
 
 @media only screen and (max-width: 600px){
-    .coupon-menu{
-        position: relative;
-        margin: 3em;
-        margin-top: 0em;
-        width: 100px;
-        margin-left: 0px;
-        float: right;
-        font-size: 19px;
-        color: white;
-        font-family: 'roboto condensed';
-        padding: 5px;
-        background: black;
-        border-radius: 8px;
-    }
-    .coupon-front-description{
-        position: absolute;
-        margin-top: 80px;
-        margin-left: 20px;
-    }
-    .coupon-front-img{
-        display: flex;
-        overflow-x: auto;
-        width: 90%;
-        margin: 5%;
-        background-color: #f9f3ec;
-        border-radius: 10px;
-    }
+    
+    
+    
     .coupon-front-poster{
         
         height: 8.3em;
@@ -1411,12 +1497,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         border: solid rgb(0, 0, 0) 3px;
     }
     .coupon-review{
-        height: 20%;
-        width: 90%;
         
-        background-color: #992031;
-        float: left;
-        margin: 2%;
         
     }
     .list-coupon{
@@ -1552,6 +1633,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         box-shadow: 0 12px 16px 0 rgb(82 82 82 / 24%), 0 17px 50px 0 rgb(105 105 105 / 19%);
         display: flex;
         justify-content: left;
+        
     }
     .center-body{
         width: 90%;
@@ -1567,7 +1649,6 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     .container-product-coupon{
         padding: 30px;
         padding-top: 0px;
-        max-height: 500px;
         border-radius: 30px;
         margin-top: 100px;
         margin-bottom: 70px;
@@ -1595,11 +1676,11 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     .button-check-survey{
         width: 95%;
         z-index: 2;
-        margin-top: 35px;
+        margin-top: 27px;
         position: relative;
         font-size: 17px;
         /* z-index: 5; */
-        height: 30px;
+        height: 25px;
         box-shadow: none;
         color: black;
     }
@@ -1639,7 +1720,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         color: #ffffff;
     }
     .container-display-coupon-box{
-        height: 250px;
+        height: 270px;
         width: 95%;
         /* margin: 19px; */
         padding: 10px;

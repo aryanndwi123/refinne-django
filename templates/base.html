@@ -21,14 +21,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@700&family=Reem+Kufi+Fun:wght@600&display=swap" rel="stylesheet"> 
 
 
+
 </head>
 <body>
 
     
 
-<div class="loader_bg">
+{% comment %} <div class="loader_bg">
     <div class="loader"></div>
-  </div> 
+  </div>  {% endcomment %}
   <div id="myModal" class="modal">
 
   <!-- Modal content -->
@@ -61,7 +62,7 @@
 
 </div>
   
-  {% include 'includes/partials/navbar-bottom.html' %}
+  {% comment %} {% include 'includes/partials/navbar-bottom.html' %} {% endcomment %}
 
   <div class="whole-content">
 
@@ -144,14 +145,14 @@
         <div class="display-category-box">
           
         
-          <div class="category-display-image"><img src="{% static 'category3.jpg' %}" class="category-image 1" alt=""></div>
+          <div class="category-display-image1"><img src="{% static 'category3.jpg' %}" class="category-image 1" alt=""></div>
           <div class="category-name">Pharmacy</div>
         </div>
 
         <div class="display-category-box">
           
         
-          <div class="category-display-image"><img src="{% static 'category4.jpg' %}" class="category-image 1" alt=""></div>
+          <div class="category-display-image1"><img src="{% static 'category4.jpg' %}" class="category-image 1" alt=""></div>
           <div class="category-name">Grocery</div>
         </div>
 
