@@ -30,37 +30,10 @@
 {% comment %} <div class="loader_bg">
     <div class="loader"></div>
   </div>  {% endcomment %}
-  <div id="myModal" class="modal">
+ 
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-  </div>
 
-</div>
 
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some </p><br>
-    <p>text </p><br>
-    <p>in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-    <p>Some text in the Modal..</p><br>
-  </div>
-
-</div>
   
   {% comment %} {% include 'includes/partials/navbar-bottom.html' %} {% endcomment %}
 
@@ -90,7 +63,7 @@
         <div class="primeimgphone" style="border-radius: 680px;box-shadow: 0px 10px 30px black;height:200px;margin-right: -90px;margin-top: -40px;"><img src="{% static 'primephoto/3.png' %}" style="height:200px;width:200px;margin-top:0px;margin-right: 0px;"alt=""></div>
         <div class="primeimgphone" style="border-radius: 580px;box-shadow: 0px 10px 30px black; height:300px;margin-top:200px;margin-right: -230px;"><img src="{% static 'primephoto/2.png' %}" style="height:300px;width:300px;"alt=""></div>
         <div class="primeimgphone" style="margin-left: -94px;margin-top: 170px;float: left;"><img src="{% static 'primephoto/1.png' %}" style="height:200px;width:200px;"alt=""></div>
-        <form method="get" action="/search">
+        <form method="get" action="/home/search">
             <div class="search-box" style="">
                 <input type="search" placeholder="Search for offers & deals" class="search-bar" name="query" id="query">
                 <button type="submit" class="search-icon"><img src="{% static 'search-icon.png' %}" style="height: 20px;width: 20px;" alt=""></button>

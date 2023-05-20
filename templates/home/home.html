@@ -16,7 +16,7 @@
       <div class="coupon-location-api"><input type="hidden" name="saddr" id="id1" value="Delhi"><button class="find-state" onclick="findMyState()" style="margin-left: 0px; "><img src="{% static 'placeholder.png' %}" style="height:14px;width:14px; "alt="">Bajaj Nagar</button><div class="coupon-review-api"></div></div>
       <div class="coupon-box-description">Burger·Pizza·Beverages</div> </div>
     </div>
-    <a href="coupons/{{cou.slug}}"><button href="#" class="button-check-survey">20% OFF above ₹299</button></a>
+    <a href="coupons/{{cou.slug}}"><button href="#" class="button-check-survey">{{cou.conditions}}</button></a>
   </div>
 </a>
 

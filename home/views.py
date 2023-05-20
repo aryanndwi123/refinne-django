@@ -65,7 +65,7 @@ def handleLogin(request):
         if user is not None:
             login(request, user)
             messages.success(request, "succesfully Logged in")
-            return redirect('/')
+            return redirect('/home')
         else:
             messages.error(request,"Invalid credentials")
             return redirect('/login')
@@ -76,7 +76,7 @@ def handleLogout(request):
     # if request.method == 'POST':
     logout(request)
     messages.success(request, "succesfully logout")
-    return redirect('/')
+    return redirect('/home')
 
 def privacypolicy(request):
     return render(request,'home/privacypolicy.html')    
@@ -94,16 +94,16 @@ def handleSignup(request):
         
         if len(username) < 5:
             messages.error(request,"Username is too short")
-            return redirect('/signup')
+            return redirect('/home/signup')
         
         if pass1 != pass2:
             messages.error(request,"Password does not match") 
             print(pass1 , pass2)
-            return HttpResponse('password not matching done')
+            return redirect('/home/signup')
           
         if len(pass1) < 5:
             messages.error(request,"Password is too short")
-            return HttpResponse('length of password ')
+            return redirect('/home/signup')
             
         
         myuser = User.objects.create_user(username=username,password=pass1)
@@ -115,7 +115,7 @@ def handleSignup(request):
         if user is not None:
             login(request, user)
             messages.success(request, "succesfully Logged in")
-            return redirect('/')
+            return redirect('/home')
     
     else:
       return render(request,'home/signup.html')       

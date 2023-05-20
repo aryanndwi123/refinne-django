@@ -12,7 +12,7 @@
 
    <!-- A div with card class for the card  -->
    <div class="card">
-     <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
+     <img src="{% static 'csmumb.jpg' %}" alt="Lago di Braies">
 
      <!-- A div with card__details class to hold the details in the card  -->
      <div class="card__details">
@@ -28,7 +28,7 @@
        <p>{{cou.content | truncatechars:100 }}</p>
 
        
-       <a href="/coupons/{{cou.slug}}" role="button" class="but1"><button class="but1">Avail Offer</button></a>
+       <a href="/home/coupons/{{cou.slug}}" role="button" class="but1"><button class="but1">Avail Offer</button></a>
      </div>
 
 
