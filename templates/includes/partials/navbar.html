@@ -41,13 +41,13 @@
      <div class="navbartop">
      <div class="navtop logo bg-edge-curved"><img src="{% static 'refinne-logo-black.png' %}" class="logo top-main" alt="...."></div>
      {% if user.is_authenticated %}
-     <div class="navtop toplink signup" ><div class="navtop toplink signupcat" style="color: #ffffff;width: 100%;margin: auto;"> {{request.user}} <div class="dropdown-content" style="margin-left: 0px;"><div class="dropdown-list"><a id="myBtn" href="/home/logout" style="color:#000000;">Logout</a></div></div> </div></div>
+     <div class="navtop toplink signup" ><div class="navtop toplink signupcat" style="color: #ffffff;width: 100%;margin: auto;"> {{request.user}} <div class="dropdown-content" style="margin-left: 0px;"><div class="dropdown-list"><a id="myBtn" href="/logout" style="color:#000000;">Logout</a></div></div> </div></div>
      {% else %}
-     <div class="navtop toplink signup" ><div class="navtop toplink signupcat" style="color: #ffffff;width: 100%;margin: auto;"> Guest <div class="dropdown-content" style="margin-left: 0px;"><div class="dropdown-list"><a id="myBtn" href="/home/login" style="color:#000000;">Login</a></div><div class="dropdown-list"><a href="/signup" style="color:#000000;">Sign Up</a></div><div class="dropdown-list"></div></div> </div></div> 
+     <div class="navtop toplink signup" ><div class="navtop toplink signupcat" style="color: #ffffff;width: 100%;margin: auto;"> Guest <div class="dropdown-content" style="margin-left: 0px;"><div class="dropdown-list"><a id="myBtn" href="/login" style="color:#000000;">Login</a></div><div class="dropdown-list"><a href="/signup" style="color:#000000;">Sign Up</a></div><div class="dropdown-list"></div></div> </div></div> 
      {% endif %}
      <div class="navtop toplink categorylink" style="color:#000000;">Categories <div class="dropdown-content"><div class="dropdown-list"><a href="dinning.php" style="color:#000000;">Dinning</a></div><div class="dropdown-list"><a href="cafe.php" style="color:#000000;">Cafe</a></div><div class="dropdown-list"><a href="groceries.php" style="color:#000000;">Groceries</a></div><div class="dropdown-list"><a href="pharmacy.php" style="color:#000000;">Pharmacy</a></div></div></div>
-     <div class="navtop toplink couponlink"><a href="/home/coupons" style="color:#000000;">Coupons</a></div>
-     <div class="navtop toplink homelink"><a href="/home" style="color:#000000;">Home</a> </div>
+     <div class="navtop toplink couponlink"><a href="/coupons" style="color:#000000;">Coupons</a></div>
+     <div class="navtop toplink homelink"><a href="/" style="color:#000000;">Home</a> </div>
 
       
       

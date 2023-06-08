@@ -27,9 +27,9 @@
 
     
 
-{% comment %} <div class="loader_bg">
+<div class="loader_bg">
     <div class="loader"></div>
-  </div>  {% endcomment %}
+  </div>  
  
 
 
@@ -63,7 +63,7 @@
         <div class="primeimgphone" style="border-radius: 680px;box-shadow: 0px 10px 30px black;height:200px;margin-right: -90px;margin-top: -40px;"><img src="{% static 'primephoto/3.png' %}" style="height:200px;width:200px;margin-top:0px;margin-right: 0px;"alt=""></div>
         <div class="primeimgphone" style="border-radius: 580px;box-shadow: 0px 10px 30px black; height:300px;margin-top:200px;margin-right: -230px;"><img src="{% static 'primephoto/2.png' %}" style="height:300px;width:300px;"alt=""></div>
         <div class="primeimgphone" style="margin-left: -94px;margin-top: 170px;float: left;"><img src="{% static 'primephoto/1.png' %}" style="height:200px;width:200px;"alt=""></div>
-        <form method="get" action="/home/search">
+        <form method="get" action="/search">
             <div class="search-box" style="">
                 <input type="search" placeholder="Search for offers & deals" class="search-bar" name="query" id="query">
                 <button type="submit" class="search-icon"><img src="{% static 'search-icon.png' %}" style="height: 20px;width: 20px;" alt=""></button>
@@ -218,47 +218,19 @@
 
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="{% static 'index.js' %}"></script>
+    
     <script>
     
     
 
-// Get the button that opens the modal
 
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
         setTimeout(function(){
             $('.loader_bg').fadeToggle();
         }, 1500);
 
         var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
 var findMyState =() =>{
     
 
