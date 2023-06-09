@@ -28,6 +28,24 @@ def search(request):
     params = {'allCoupons': allCoupons, 'query' : query}
     return render(request, 'home/search.html',params)
 
+def cafesearch(request):
+    query="one"       
+    allCouponsName = Coupons.objects.filter(name__icontains=query)
+    allCouponsContent = Coupons.objects.filter(content__icontains=query)
+    allCoupons = allCouponsName.union(allCouponsContent)
+    params = {'allCoupons': allCoupons, 'query' : query}
+    return render(request, 'categories/cafe.html',params)
+
+def dinningsearch(request):
+    query="dinning"       
+    allCouponsName = Coupons.objects.filter(name__icontains=query)
+    allCouponsContent = Coupons.objects.filter(content__icontains=query)
+    allCoupons = allCouponsName.union(allCouponsContent)
+    params = {'allCoupons': allCoupons, 'query' : query}
+    return render(request, 'categories/dinning.html',params)
+
+
+
 def c_save(request):
     user = authenticate(username="aryann123", password="aryann@123")
     if user is not None:
