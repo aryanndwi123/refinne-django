@@ -1,0 +1,42 @@
+{% extends 'c_base.html' %}
+{% block title %}Cafes{% endblock title %}
+{% load static %}
+
+
+
+
+{% block body %}
+
+<div class="container" style="height: 500px;">
+    <h5>Cafes</h5>
+    {% if allCoupons|length < 1 %}<p style="height: 500px;">Your search <b>{{query}}</b> did not match</p>{% endif %}
+    {% for cou in allCoupons %}
+   
+  <div id="container">
+
+   <div class="card">
+     <img src="{% static 'csmumb.jpg' %}" alt="Lago di Braies">
+
+     <div class="card__details">
+
+
+       <span class="tag">{{cou.offer}} % off</span>
+
+       
+
+     
+       <div class="name">{{cou.name}}</div>
+
+       <p>{{cou.content | truncatechars:100 }}</p>
+
+       <a href="/coupons/{{cou.slug}}" role="button" class="but1"><button class="but1">Avail Offer</button></a>
+     </div>
+
+
+   </div>
+ </div>
+
+   {% endfor %}
+
+ </div> 
+{% endblock body %}

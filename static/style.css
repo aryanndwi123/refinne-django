@@ -413,7 +413,7 @@ body{
     
 
     
-    margin-left: 80px;
+    
     position: relative;
     margin-top: 240px;
     z-index: 2;
@@ -2164,26 +2164,21 @@ img {
     object-fit: cover;
   }
 #container {
-    max-width: 300px;
-  
-    /* Center the container in middle on horizontal axis */
-    margin: 0 auto;
-  
-    /* Add empty space above the container (20% of the view height) */
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-content: space-between;
+    
   }
 .card {
-    /* Change background color */
     background-color: white;
-  
-    /* Add border */
+    width: 30%;
     border: 1px solid #bacdd8;
-  
-    /* Add space between the border and the content */
     padding: 8px;
-  
     border-radius: 12px;
+    margin: 1.6%;
+
   }
 /* Style div elements that have class equal to tag */
 .tag {
