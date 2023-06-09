@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'home.apps.HomeConfig',
     'coupons.apps.CouponsConfig',
+    'blogs.apps.BlogsConfig',
     'corsheaders',
 
     

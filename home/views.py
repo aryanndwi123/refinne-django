@@ -29,28 +29,36 @@ def search(request):
     return render(request, 'home/search.html',params)
 
 def c_save(request):
+    user = authenticate(username="aryann123", password="aryann@123")
+    if user is not None:
+        if request.method=='POST':
+            name = request.POST['name']
+            offer = request.POST['offer']
+            conditions = request.POST['conditions']
+            while True:
+                uid = ''.join([str(random.randint(0, 999)).zfill(3) for _ in range(2)])
+                try:
+                    code=uid            
+                    break
+                except:
+                    continue
+            
+            slug = request.POST['slug']
+            content = request.POST['content']
     
-    if request.method=='POST':
-        name = request.POST['name']
-        offer = request.POST['offer']
-        conditions = request.POST['conditions']
-        while True:
-            uid = ''.join([str(random.randint(0, 999)).zfill(3) for _ in range(2)])
-            try:
-                code=uid            
-                break
-            except:
-                continue
-        
-        slug = request.POST['slug']
-        content = request.POST['content']
- 
-        
-        c_save = Coupons(name=name,offer=offer,conditions=conditions,content=content,code=code,slug=slug)
-        c_save.save()
+            
+            c_save = Coupons(name=name,offer=offer,conditions=conditions,content=content,code=code,slug=slug)
+            c_save.save()
          
             
-    return render(request,'dashboard/dashboard.html')
+        return render(request,'dashboard/dashboard.html')
+    else:
+        return redirect('/login')
+    
+    
+    
+        
+        
 
 
 
@@ -65,7 +73,7 @@ def handleLogin(request):
         if user is not None:
             login(request, user)
             messages.success(request, "succesfully Logged in")
-            return redirect('')
+            return redirect('/')
         else:
             messages.error(request,"Invalid credentials")
             return redirect('/login')
@@ -115,7 +123,7 @@ def handleSignup(request):
         if user is not None:
             login(request, user)
             messages.success(request, "succesfully Logged in")
-            return redirect('')
+            return redirect('/')
     
     else:
       return render(request,'home/signup.html')       
