@@ -47,8 +47,8 @@ def dinningsearch(request):
 
 
 def c_save(request):
-    user = authenticate(username="aryann123", password="aryann@123")
-    if user is not None:
+    user = authenticate(username="mayasa", password="mayasa")
+    if request.user.is_authenticated:
         if request.method=='POST':
             name = request.POST['name']
             offer = request.POST['offer']
@@ -102,7 +102,7 @@ def handleLogout(request):
     # if request.method == 'POST':
     logout(request)
     messages.success(request, "succesfully logout")
-    return redirect('')
+    return redirect('/')
 
 def privacypolicy(request):
     return render(request,'home/privacypolicy.html')    
@@ -144,7 +144,17 @@ def handleSignup(request):
             return redirect('/')
     
     else:
-      return render(request,'home/signup.html')       
+      return render(request,'home/signup.html')  
+  
+  
+def handleProfile(request):
+    user = authenticate(username="mayasa", password="mayasa")
+    if request.user.is_authenticated:
+        return render(request,'home/profile.html')
+    else:
+        return redirect('/login')
+        
+           
     
     
 
