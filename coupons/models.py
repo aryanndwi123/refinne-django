@@ -11,9 +11,11 @@ class Coupons(models.Model):
     code = models.TextField(unique=True)
    
     conditions = models.TextField(default=000000)
+    coins = models.IntegerField(default=10)
     
     
     content = models.TextField()
+    
     slug = models.CharField(max_length=130,unique=True)
     
     
