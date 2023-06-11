@@ -1,5 +1,8 @@
 from django.shortcuts import render, HttpResponse,redirect
 from coupons.models import Coupons
+from django.db.models import FloatField
+from django.db.models.functions import Cast
+from coins.models import Coins
 import random
 from django.contrib import messages
 from django.contrib.auth import authenticate 
@@ -30,6 +33,19 @@ def coup_verification(request):
             
             
             code_entry = Coupons.objects.filter(name = name).values('code')
+            
+            #Coins authentication
+            if User.objects.filter(username=username).exists() and Coins.objects.filter(username = username).exists():
+                user_coins = Coins.objects.filter(username = username).values('coins')
+                user_coins = Coins.objects.annotate(as_float=Cast('coins', FloatField())).get()
+                coupons_coins = Coupons.objects.filter(name = name).values('coins')
+                coupons_coins = Coupons.objects.annotate(as_float=Cast('coins', FloatField())).get()
+
+                user_coins = user_coins.as_float + coupons_coins.as_float
+                total_coins = Coins.objects.get(username=username)
+                total_coins.coins = user_coins
+                total_coins.save()
+                
             
   
             

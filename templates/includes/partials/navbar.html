@@ -40,7 +40,7 @@
 
      <div class="navbartop">
      <div class="navtop logo bg-edge-curved"><img src="{% static 'refinne-logo-black.png' %}" class="logo top-main" alt="...."></div>
-     <div class="navtop toplink couponlink"><a href="/profile" style="display: flex;color:#000000;"><img src={% static 'coins.png' %} style="height: 30px;width: 30px;border-radius: 0px;"alt=""><div class="coins">Coins</div></a></div>
+     <div class="navtop toplink couponlink"><a href="/profile" style="display: flex;color:#000000;"><img src={% static 'coins.png' %} style="height: 30px;width: 30px;border-radius: 0px;"alt=""><div class="coins">{% for coins in userCoins %}{{coins.coins}}{% endfor %}</div></a></div>
      {% if user.is_authenticated %}
      <div class="navtop toplink signup" ><div class="navtop toplink signupcat" style="color: #ffffff;width: 100%;margin: auto;"> {{request.user}} <div class="dropdown-content" style="margin-left: 0px;"><div class="dropdown-list"><a id="myBtn" href="/profile" style="color:#000000;">Profile</a></div><div class="dropdown-list"><a id="myBtn" href="/logout" style="color:#000000;">Logout</a></div></div> </div></div>
      {% else %}

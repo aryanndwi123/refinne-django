@@ -13,8 +13,9 @@
 
     <h1>Coupons form</h1>
 <form method='post' action='/dashboard/verification' >
-  {% csrf_token %}
+  
     <div class="form-group">
+      {% csrf_token %}
       <label for="name">name</label>
       <input type="text" class="form-control" id="name" name="name" aria-describedby="name" >
       

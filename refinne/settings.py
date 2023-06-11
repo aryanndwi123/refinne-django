@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'coupons.apps.CouponsConfig',
     'blogs.apps.BlogsConfig',
-    'coins.apps.CoinsConfig',
+    'coins.apps.CoinsConfig',    
     'corsheaders',
 
     

@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse,redirect
 from coupons.models import Coupons
+from coins.models import Coins
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate , login ,logout
 from django.contrib import messages
@@ -9,10 +10,16 @@ import random
 # Create your views here.
 def home(request):
     allCoupons = Coupons.objects.all()
+    username = request.user.username
+    userCoins = Coins.objects.filter(username = username)
     
-    context = {'allCoupons': allCoupons}
+    context = {'allCoupons': allCoupons,'userCoins':userCoins}
     
     return render(request,'home/home.html', context)
+
+
+
+
 
 
   
@@ -25,7 +32,10 @@ def search(request):
         allCouponsName = Coupons.objects.filter(name__icontains=query)
         allCouponsContent = Coupons.objects.filter(content__icontains=query)
         allCoupons = allCouponsName.union(allCouponsContent)
-    params = {'allCoupons': allCoupons, 'query' : query}
+    
+    username = request.user.username
+    userCoins = Coins.objects.filter(username = username)   
+    params = {'allCoupons': allCoupons, 'query' : query,'userCoins':userCoins }
     return render(request, 'home/search.html',params)
 
 def cafesearch(request):
@@ -33,7 +43,9 @@ def cafesearch(request):
     allCouponsName = Coupons.objects.filter(name__icontains=query)
     allCouponsContent = Coupons.objects.filter(content__icontains=query)
     allCoupons = allCouponsName.union(allCouponsContent)
-    params = {'allCoupons': allCoupons, 'query' : query}
+    username = request.user.username
+    userCoins = Coins.objects.filter(username = username)
+    params = {'allCoupons': allCoupons, 'query' : query,'userCoins':userCoins}
     return render(request, 'categories/cafe.html',params)
 
 def dinningsearch(request):
@@ -41,14 +53,17 @@ def dinningsearch(request):
     allCouponsName = Coupons.objects.filter(name__icontains=query)
     allCouponsContent = Coupons.objects.filter(content__icontains=query)
     allCoupons = allCouponsName.union(allCouponsContent)
-    params = {'allCoupons': allCoupons, 'query' : query}
+    username = request.user.username
+    userCoins = Coins.objects.filter(username = username)
+    params = {'allCoupons': allCoupons, 'query' : query,'userCoins':userCoins}
     return render(request, 'categories/dinning.html',params)
 
 
 
 def c_save(request):
     user = authenticate(username="mayasa", password="mayasa")
-    if request.user.is_authenticated:
+    if request.user.is_authenticated and request.user.username=='mayasa':
+        print(request.user.username)
         if request.method=='POST':
             name = request.POST['name']
             offer = request.POST['offer']
@@ -150,7 +165,11 @@ def handleSignup(request):
 def handleProfile(request):
     user = authenticate(username="mayasa", password="mayasa")
     if request.user.is_authenticated:
-        return render(request,'home/profile.html')
+        username = request.user.username
+        userCoins = Coins.objects.filter(username = username)
+        
+        params = {'userCoins':userCoins}
+        return render(request,'home/profile.html',params)
     else:
         return redirect('/login')
         
