@@ -15,6 +15,7 @@ class Coupons(models.Model):
     
     
     content = models.TextField()
+    location = models.TextField(max_length=500, blank=True)
     
     slug = models.CharField(max_length=130,unique=True)
     
@@ -22,5 +23,8 @@ class Coupons(models.Model):
     
     def __str__(self):
         return self.name +' by '
+    
+
+    
     
     

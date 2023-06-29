@@ -1,0 +1,15 @@
+{% extends 'c_base.html' %}
+{% block title %}Profile{% endblock title %}
+{% block search_style %}display:None;{% endblock search_style %}
+{% block body %}
+
+<div class="profile-card">
+    <div class="profile-photo"></div>
+    <div class="profile-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente excepturi cupiditate ad ea quo unde totam sed, earum amet est facere dolor provident hic consequuntur laboriosam. Ad sequi ducimus eveniet exercitationem eum incidunt atque deserunt!</div>
+    <div class="coins">{% for coins in userCoins %}{{coins.coins}}{% endfor %}</div>
+    <button type="button" class="redeem_coins">Redeem Coins</button>
+</div>
+
+<div class="redeem-coins"></div>
+   
+{% endblock body %}

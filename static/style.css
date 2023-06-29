@@ -1057,15 +1057,28 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     
 }
 
-.profile-photo{
-    height: 70px;
-    width: 70px;
-    background-color: black;
+.profile-card{
+    height: 80%;
+    width: 70%;
+    background-color: #bbaaaa;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 100%;
+    border-radius: 10%;
     margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+}
+.profile-photo{
+    height: 130px;
+    width: 130px;
+    background-color: black;
+    border-radius: 100%;
+    margin-top: -215px;
 }
 
 
@@ -1101,6 +1114,9 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
   ::-webkit-scrollbar-thumb:hover {
     background: #7e7e7e; 
   }
+
+
+  
 
 @media only screen and (max-width: 1000px){
     .whole-content{

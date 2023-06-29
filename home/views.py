@@ -169,7 +169,7 @@ def handleProfile(request):
         userCoins = Coins.objects.filter(username = username)
         
         params = {'userCoins':userCoins}
-        return render(request,'home/profile.html',params)
+        return render(request,'profile/profile.html',params)
     else:
         return redirect('/login')
         
