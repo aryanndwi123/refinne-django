@@ -217,7 +217,7 @@ body{
     border-radius: 20px;
 }
 .upper-centered-objects{
-    background-image: linear-gradient(140deg, #c8f5e9,#c8f5e9,#fefefe,#c8f5e9,#d7f2eb);
+    background-image: linear-gradient(140deg, #ffe5c6,#ffe5c6,#fefefe,#ffe5c6,#ffe5c6);
     
     
     padding-top: 65px;
@@ -364,7 +364,7 @@ body{
     padding-bottom: 10px;
     margin: auto;
     margin-left: -20px;
-    background-color: #22f4cf;
+    background-color: #fbb363;
     
 }
 .search-bar:focus-visible{
@@ -384,7 +384,7 @@ body{
     
     border-radius: 10px;
     color: white;
-    background-color: #a3f6e6;
+    background-color: #fbb363;
     font-size: 17px;
 
     
@@ -400,7 +400,7 @@ body{
 }
 
 .search-icon:hover{
-    background-color: #64ecd1;
+    background-color: #f7c081;
 }
 
 
@@ -446,7 +446,7 @@ body{
     margin-right: 5px;
     width: 140px;
     margin-top: 20px;
-    background-color: #22f4cf;
+    background-color: #fbb363;
     
     
 }
@@ -480,19 +480,7 @@ body{
     
 
 }
-.footer{
-    position: relative;
 
-    width:100%;
-    bottom:0px;
-    height: 150px;
-    background-color: rgb(36, 36, 36);
-    color: rgb(247, 247, 247);
-    text-align: center;
-    
-    
-
-}
 
 .privacypol{
     display: block;
@@ -756,7 +744,7 @@ body{
     
     
     border-radius: 10px;
-    background-color: #23f4ce;
+    background-color: #fbb363;
     border: none;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
@@ -771,7 +759,7 @@ body{
 }
 
 .button-check-survey:hover{
-    border: solid #23f4ce 1px;
+    border: solid #fbb363 1px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -1238,6 +1226,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     width: 90%;
     text-align: left;
     margin-bottom: 0px;
+    border-radius: 40px;
 }
 
 .menu-loc-container{
@@ -1262,11 +1251,11 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     margin-left: 5px;
     /* float: left; */
     font-size: 3vh;
-    color: #22F4CF;
+    color: #fbb363;
     font-family: 'montserrat';
     /* padding: 5px; */
     background: #ffffff;
-    border: 2px solid #22F4CF;
+    border: 2px solid #fbb363;
     /* border-radius: 8px; */
     margin-left: 3.5%;
     cursor: pointer;
@@ -1287,7 +1276,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     color: white;
     font-family: 'montserrat';
     /* padding: 5px; */
-    background: #22F4CF;
+    background: #fbb363;
     /* border-radius: 8px; */
     margin-left: 3.5%;
     cursor: pointer;
@@ -1296,26 +1285,22 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 
 .coloumnp1{
     float: left;
-    width: 65%;
+    width: 75%;
     padding: 10px;
     height: 100%;
-    background-color: #F0226C;
-    color: white;
+    background-color: #f9f3ec;
+    border-radius: 20px 0px 0px 20px;
+    color: rgb(0, 0, 0);
 }
 .coloumnp2{
     float: left;
     width: 25%;
     padding: 10px;
+    border-radius: 0px 40px 40px 0px;
     height: 100%;
-    background-color: #22F4CF;
+    background-color: #fbb363;
 }
-.coloumnp3{
-    float: left;
-    width: 10%;
-    padding: 10px;
-    height: 100%;
-    background-color: #F0226C;
-}
+
 
 .coupon-voucher{
     text-align: center;
@@ -1328,7 +1313,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     text-align: center;
     margin-top: 5%;
     font-size: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'roboto condensed';
 
 }
@@ -1344,6 +1329,9 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 .coupon-front-offer{
     text-align: center;
     font-size: 300%;
+    margin-top: 10%;
+    font-family: 'roboto condensed';
+    color: white;
 
 }
 .photo-square-coupon{
@@ -1421,7 +1409,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     .coupon-voucher {
         text-align: center;
         margin-top: 2%;
-        font-size: 45px;
+        font-size: 35px;
         font-family: 'roboto';
         color: black;
     }
@@ -1458,6 +1446,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         background-color: #f9f3ec;
         border-radius: 20px 0px 0px 20px;
         color: white;
+        
     }
     .coloumnp2{
         float: left;
@@ -1467,14 +1456,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         height: 100%;
         background-color: #fbb363;
     }
-    .coloumnp3{
-        float: left;
-        width: 0%;
-        display: none;
-        padding: 10px;
-        height: 100%;
-        background-color: #F0226C;
-    }
+    
     
     
     
@@ -1482,7 +1464,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     .poster-top{
         height: 530px;
         background-color: #fdf9f4;
-        margin: 3%;
+        
         border-radius: 10px;
     }
     .coupon-front-name {
@@ -1593,9 +1575,8 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         font-size: 15px;
         color: black;
         font-family: 'roboto condensed';
-        margin-top: 7%;
-        float: left;
-        margin-left: 38px;
+    
+        width: 100%;
     }
       .coupon-code-container {
         width: 152px;
@@ -2090,7 +2071,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 }
 .loader:before, .loader:after{
     content: '';
-    border: 1em solid #22f4cf;
+    border: 1em solid #fbb363;
     border-radius: 50%;
     width: inherit;
     height: inherit;

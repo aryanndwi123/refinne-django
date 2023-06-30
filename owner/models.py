@@ -6,6 +6,8 @@ from django.dispatch import receiver
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     position = models.TextField(max_length=500, blank=True)
+    def __str__(self):
+        return self.user.username +' by '
      
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):

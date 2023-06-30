@@ -12,9 +12,10 @@ from django.contrib.auth.models import User
 def dashboard(request):
     username = request.user.username
     password = request.user.password
-    owner = request.owner.position
+    owner = request.user.profile.position
     user = authenticate(username=username, password=password)
-    if request.user.is_authenticated and owner=="YES":
+    if request.user.is_authenticated and owner == True:
+        print(owner)
  
         return render(request,'dashboard/dashboard.html')
     else:
@@ -26,7 +27,9 @@ def dashboard(request):
     
 
 def coup_verification(request):
-    user = authenticate(username="mayasa", password="mayasa")
+    username = request.user.username
+    password = request.user.password
+    user = authenticate(username=username, password=username)
     if request.user.is_authenticated:
  
         if request.method=='POST':

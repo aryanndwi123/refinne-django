@@ -61,8 +61,10 @@ def dinningsearch(request):
 
 
 def c_save(request):
-    user = authenticate(username="mayasa", password="mayasa")
-    if request.user.is_authenticated and request.user.username=='mayasa':
+    username = request.user.username
+    password = request.user.password
+    user = authenticate(username=username, password=password)
+    if request.user.is_authenticated and request.user.profile.position == "owner":
         print(request.user.username)
         if request.method=='POST':
             name = request.POST['name']
