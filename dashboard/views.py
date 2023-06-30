@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse,redirect
 from coupons.models import Coupons
+from owner.models import Profile
 from django.db.models import FloatField
 from django.db.models.functions import Cast
 from coins.models import Coins
@@ -9,8 +10,11 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 
 def dashboard(request):
-    user = authenticate(username="mayasa", password="mayasa")
-    if request.user.is_authenticated:
+    username = request.user.username
+    password = request.user.password
+    owner = request.owner.position
+    user = authenticate(username=username, password=password)
+    if request.user.is_authenticated and owner=="YES":
  
         return render(request,'dashboard/dashboard.html')
     else:

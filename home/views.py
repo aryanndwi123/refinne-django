@@ -78,9 +78,10 @@ def c_save(request):
             
             slug = request.POST['slug']
             content = request.POST['content']
+            location = request.POST['location']
     
             
-            c_save = Coupons(name=name,offer=offer,conditions=conditions,content=content,code=code,slug=slug)
+            c_save = Coupons(name=name,offer=offer,conditions=conditions,content=content,code=code,slug=slug,location=location)
             c_save.save()
          
             
