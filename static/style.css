@@ -1352,9 +1352,68 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     margin-bottom: 2%;
 }
 
+.footer{
+    height: 200px;
+    background-color: rgb(255 254 245);
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    width: 31.33333%;
+    margin: 1%;
+    background-color: rgb(255 254 245);
+}
+.footer_head{
+    font-family: monospace;
+    font-size: 2rem;
+}
+.footer_h{
+    font-family: 'Montserrat', Times, serif;
+    font-size: 1.2rem;
+    height: 20%;
+}
+.footer_tail{
+    font-family: 'Montserrat', Times, serif;
+    font-size: 1rem;
+    height: 15%;
+    color: #636363;
+    cursor: pointer;
+
+}
+.socials{
+    height: 20%;
+    position: relative;
+    /* background-color: #e9d8d8; */
+    bottom: -40%;
+}
+.copyright{
+    height: 20%;
+    position: relative;
+    /* background-color: #a31c1c; */
+    bottom: -40%;
+}
+
 
 
 @media only screen and (max-width: 600px){
+    .footer_info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 1%;
+        height: 50%;
+        /* text-align: center; */
+        background-color: rgb(255 254 245);
+    }
+    .footer{
+        height: 255px;
+        background-color: rgb(255 254 245);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
     .coupon-front-img{
         display: flex;
         overflow-x: auto;

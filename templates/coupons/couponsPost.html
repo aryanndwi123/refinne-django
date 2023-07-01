@@ -53,10 +53,14 @@
       
     </div>
     <div class="coupon-front-img">
-      <img src="{% static 'breadbash/1.jpg' %}" class="photo-square-coupon" alt="">
-      <img src="{% static 'breadbash/2.jpg' %}" class="photo-square-coupon" alt="">
-      <img src="{% static 'breadbash/3.jpg' %}" class="photo-square-coupon" alt="">
-      <img src="{% static 'breadbash/4.jpg' %}" class="photo-square-coupon" alt="">
+      {% if cou.image %}
+
+        <img src="{{ cou.image.url }}" class="photo-square-coupon" alt="">
+        <img src="{{ cou.image.url }}" class="photo-square-coupon" alt="">
+        <img src="{{ cou.image.url }}" class="photo-square-coupon" alt="">
+        <img src="{{ cou.image.url }}" class="photo-square-coupon" alt="">
+        {% endif %}
+      
       
     </div>
 
