@@ -1,14 +1,21 @@
 from django.shortcuts import render, HttpResponse
 from coupons.models import Coupons
 from coins.models import Coins
+from django.contrib.auth.models import User
 
 # Create your views here.
 def couponsHome(request):
     allCoupons = Coupons.objects.all()
     username = request.user.username
     userCoins = Coins.objects.filter(username = username)
+    if(User.objects.filter(username=username).exists() and request.user.profile.position == "owner"):
+          data = True
     
-    context = {'allCoupons': allCoupons,'userCoins':userCoins}
+    else:
+        data = False
+    
+    
+    context = {'data':data,'allCoupons': allCoupons,'userCoins':userCoins}
     
     return render(request,'coupons/couponsHome.html', context)
 

@@ -14,10 +14,20 @@ def dashboard(request):
     password = request.user.password
     owner = request.user.profile.position
     user = authenticate(username=username, password=password)
+    
+    
+    
+    if(User.objects.filter(username=username).exists() and request.user.profile.position == "owner"):
+          data = True
+    
+    else:
+        data = False
+    context = {'data':data}
+    
     if request.user.is_authenticated and owner == True:
-        print(owner)
+        
  
-        return render(request,'dashboard/dashboard.html')
+        return render(request,'dashboard/dashboard.html',context)
     else:
         return redirect('/login')
     

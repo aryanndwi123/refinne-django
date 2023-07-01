@@ -16,6 +16,8 @@ class Coupons(models.Model):
     
     content = models.TextField()
     location = models.TextField(max_length=500, blank=True)
+    tags = models.TextField(max_length=500, blank=True)
+    image = models.ImageField(null=True, blank=True, upload_to="images/")
     
     slug = models.CharField(max_length=130,unique=True)
     

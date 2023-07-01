@@ -372,7 +372,7 @@ body{
 
 }
 .search-bar:focus{
-    background-color: #d8ebe7;
+    background-color: #fbb363;
 
 }
 
@@ -529,7 +529,7 @@ body{
     border-radius: 30px;
    
     margin-top: 10px;
-    margin-bottom: 70px;
+    margin-bottom: -120px;
     display: flex;
     justify-content: center;
 
@@ -588,7 +588,7 @@ body{
 
 
 .display-category-box{
-    height: 80%;
+    height: 60%;
     width: 250px;
     border-radius: 20px;
     margin: 20px;
@@ -821,18 +821,18 @@ body{
 
 .category-name{
     text-shadow: 8px rgba(0,0,0,0.2);
-    margin-left: 0px;
+   
     padding-left: 15px;
-    padding-right: 15px;
-    font-size: 25px;
-    margin-top: 40px;
+   
+    font-size: 20px;
+    
     color: white;
     position: absolute;
     font-family: 'Poppins', Courier, monospace;
-    background: rgba(34,244,207, 0.7);
+    
     border-radius: 0px 5px 5px 0px;
     text-align: left;
-    width: 25vh;
+    
 }
 
 
@@ -1711,7 +1711,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     .search-bar{
         height: 30px;
         width: 90%;
-        background-color: #d9ebe8;
+        background-color: #dac5b1;
         font-size: 17px;
     }
     .search-box{
@@ -1767,7 +1767,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
         color: white;
         position: absolute;
         font-family: 'Poppins', Courier, monospace;
-        background: rgba(34,244,207, 0.7);
+        
         border-radius: 0px 5px 5px 0px;
         text-align: left;
         width: 30%;
@@ -2017,7 +2017,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     padding: 75px;
     padding-top: 60px;
     padding-bottom: 100px;
-    background: #c9fffa;
+    background: #fbb363;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     border-radius: 10px;

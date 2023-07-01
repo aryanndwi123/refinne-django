@@ -11,9 +11,18 @@ import random
 def home(request):
     allCoupons = Coupons.objects.all()
     username = request.user.username
+    
     userCoins = Coins.objects.filter(username = username)
     
-    context = {'allCoupons': allCoupons,'userCoins':userCoins}
+    
+    if(User.objects.filter(username=username).exists() and request.user.profile.position == "owner"):
+          data = True
+    
+    else:
+        data = False
+    
+    
+    context = {'data':data,'allCoupons': allCoupons,'userCoins':userCoins}
     
     return render(request,'home/home.html', context)
 
@@ -65,7 +74,7 @@ def c_save(request):
     password = request.user.password
     user = authenticate(username=username, password=password)
     if request.user.is_authenticated and request.user.profile.position == "owner":
-        print(request.user.username)
+        
         if request.method=='POST':
             name = request.POST['name']
             offer = request.POST['offer']
@@ -81,9 +90,11 @@ def c_save(request):
             slug = request.POST['slug']
             content = request.POST['content']
             location = request.POST['location']
+            if len(request.FILES ) != 0:
+                image = request.FILES['image']
     
             
-            c_save = Coupons(name=name,offer=offer,conditions=conditions,content=content,code=code,slug=slug,location=location)
+            c_save = Coupons(name=name,offer=offer,conditions=conditions,content=content,code=code,slug=slug,location=location,image=image)
             c_save.save()
          
             

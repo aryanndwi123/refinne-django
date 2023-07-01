@@ -10,7 +10,12 @@
     
     <div class="coupon-display-image">
       
-      <div class="img-gradient"><img src="{% static 'breadbash/1.jpg' %}" class="coupon-image" alt=""></div>
+      <div class="img-gradient">
+        {% if cou.image %}
+
+        <img src="{{ cou.image.url }}" class="coupon-image" alt="">
+        {% endif %}
+      </div>
       <div class="coupon-name">{{cou.name}}</div>
       <div class="coupon-details">
       <div class="coupon-location-api"><input type="hidden" name="saddr" id="id1" value="Delhi"><button class="find-state" onclick="findMyState()" style="margin-left: 0px; "><img src="{% static 'placeholder.png' %}" style="height:14px;width:14px; "alt="">Bajaj Nagar</button><div class="coupon-review-api"></div></div>

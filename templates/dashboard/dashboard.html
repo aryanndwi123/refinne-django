@@ -52,7 +52,7 @@
   <!-- Learn More: https://formbold.com -->
   <div class="formbold-form-wrapper">
     <img src="your-image-url-here.jpg">
-    <form action="/profile" method="POST">
+    <form action="/dashboard" method="POST" enctype="multipart/form-data">
       {% csrf_token %}
       <div class="formbold-input-group">
         <label for="name" class="formbold-form-label required-field"> Name </label>
@@ -61,6 +61,16 @@
           name="name"
           id="name"
           placeholder="Enter your Cafe/Dinning name"
+          class="formbold-form-input"
+          required/>
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label required-field"> Image </label>
+        <input
+          type="file"
+          name="image"
+          id="image"
+          placeholder="Enter your Cafe/Dinning Images"
           class="formbold-form-input"
           required/>
       </div>
